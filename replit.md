@@ -1,36 +1,62 @@
-# [Project name]
+# De Goede Hoop Koshuis — Webwerf
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+'n Professionele, front-end-only statiese webwerf vir De Goede Hoop Koshuis, 'n Christelike Afrikaanse studentekoshuis in Hatfield, Pretoria.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/de-goede-hoop run dev` — run the frontend dev server
+- `pnpm --filter @workspace/de-goede-hoop run typecheck` — TypeScript check
+- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000, unused by this site)
 - `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Frontend: React 18 + Vite + Wouter (SPA routing)
+- Styling: Inline React styles + Tailwind utilities
+- Fonts: Playfair Display + Inter (Google Fonts)
+- Language: Fully Afrikaans
+- No backend, no database, no API keys
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/de-goede-hoop/` — the full static website
+- `artifacts/de-goede-hoop/src/data/siteConfig.ts` — centralised contact config (email, WhatsApp, address, etc.)
+- `artifacts/de-goede-hoop/src/pages/` — all 7 pages (Tuis, OorOns, Verblyf, Eerstejaars, Aansoek, Kontak, Popi)
+- `artifacts/de-goede-hoop/src/components/` — reusable components (Navbar, Footer, WhatsAppFloat, etc.)
+- `artifacts/de-goede-hoop/public/_redirects` — Cloudflare Pages SPA redirect rule
+- `artifacts/de-goede-hoop/README.md` — deployment guide
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Frontend-only static site — no Express, no backend, no database, no exposed API keys
+- All contact links use `mailto:` and `wa.me/` — no form submission backend required
+- Aansoek form uses `mailto:` fallback generating a prefilled e-mail via the user's local mail client
+- Centralised `siteConfig.ts` ensures all contact details are updated in one place
+- `public/_redirects` with `/* /index.html 200` handles all SPA routing on Cloudflare Pages
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+7-page Afrikaans website for De Goede Hoop Koshuis:
+- **Tuis** — Hero, trust highlights, Waarom cards, Vir Ouers section, final CTA
+- **Oor Ons** — Identity, values, koshuis life, leadership & community
+- **Verblyf & Geriewe** — Facilities, location, Google Maps placeholder
+- **Eerstejaars** — Welcome, expectations, process steps, parent info, PDF download
+- **Aansoek** — Static application form with mailto fallback + POPI consent
+- **Kontak Ons** — Contact cards, info blocks, Maps placeholder
+- **POPI / Privaatheid** — Full POPI-compliant privacy policy
+
+## Deployment path
+
+```
+Replit → GitHub → Cloudflare Pages → Cloudflare DNS → Afrihost custom domain
+```
+
+Cloudflare Pages settings:
+- Framework preset: Vite
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Production branch: `main`
 
 ## User preferences
 
@@ -38,8 +64,12 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Place `public/de-goede-hoop-inligtingsbrief-2027.pdf` in the `public/` folder before going live — the Eerstejaars page links to it.
+- Replace the Google Maps placeholder blocks in VerblyPage.tsx and KontakPage.tsx with a real iframe embed from maps.google.com.
+- The `vite.config.ts` requires `PORT` and `BASE_PATH` env vars at runtime — this is injected by Replit workflows and Cloudflare Pages. Do not run `vite build` directly from bash without them.
 
 ## Pointers
 
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+- See `artifacts/de-goede-hoop/README.md` for full deployment instructions
+- See `artifacts/de-goede-hoop/src/data/siteConfig.ts` for all centralised contact config
+- See the `pnpm-workspace` skill for workspace structure details
