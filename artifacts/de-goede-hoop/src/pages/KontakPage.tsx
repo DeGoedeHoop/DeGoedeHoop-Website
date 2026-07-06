@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { MessageCircle, ClipboardList, GraduationCap, Users, MapPin } from "lucide-react";
+import { MessageCircle, ClipboardList, GraduationCap, Users } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
@@ -145,26 +145,24 @@ export default function KontakPage() {
             </div>
           </div>
 
-          {/* Google Maps placeholder */}
+          {/* Google Maps embed */}
           <div
             style={{
-              backgroundColor: "#f0ebe0",
-              border: "2px dashed #3d52a0",
               borderRadius: "10px",
-              padding: "3rem",
-              textAlign: "center",
+              overflow: "hidden",
+              border: "1px solid rgba(61,82,160,0.2)",
               marginBottom: "4rem",
             }}
-            role="img"
-            aria-label="Google Maps kaart — Burnettstraat, Hatfield, Pretoria"
           >
-            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.4rem" }}>
-              <MapPin size={15} aria-hidden="true" /> Google Maps Kaart Plaasvervanger
-            </p>
-            <p style={{ color: "#888", fontSize: "0.9rem" }}>Burnettstraat, Hatfield, Pretoria</p>
-            <p style={{ color: "#aaa", fontSize: "0.78rem", marginTop: "0.5rem" }}>
-              [Plak 'n Google Maps iframe hier — kry die embed-kode op maps.google.com]
-            </p>
+            <iframe
+              src="https://www.google.com/maps?q=De+Goede+Hoop+Koshuis,-25.7504754,28.2417351&z=17&output=embed"
+              width="100%"
+              height="360"
+              style={{ display: "block", border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps kaart — Burnettstraat, Hatfield, Pretoria"
+            />
           </div>
 
           {/* Contact CTA cards */}

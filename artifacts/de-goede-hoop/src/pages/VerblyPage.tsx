@@ -1,4 +1,4 @@
-import { Home, Wifi, Car, Shirt, UtensilsCrossed, BookOpen, Info, MapPin, Mail } from "lucide-react";
+import { Home, Wifi, Car, Shirt, UtensilsCrossed, BookOpen, Info, Mail } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
@@ -164,28 +164,24 @@ export default function VerblyPage() {
           <p style={{ color: "rgba(250,247,242,0.82)", fontSize: "1rem", lineHeight: 1.8, textAlign: "center", maxWidth: "600px", margin: "0 auto 2rem" }}>
             {siteConfig.locationDescription}. Hatfield is een van Pretoria se gewildste studente-areas met winkels, restaurante en uitstekende openbare vervoer reg voor jou deur.
           </p>
-          {/* Maps placeholder */}
+          {/* Google Maps embed */}
           <div
             style={{
-              backgroundColor: "rgba(255,255,255,0.06)",
-              border: "2px dashed rgba(201,168,76,0.4)",
               borderRadius: "10px",
-              padding: "3rem",
-              textAlign: "center",
+              overflow: "hidden",
+              border: "1px solid rgba(201,168,76,0.25)",
               marginBottom: "2rem",
             }}
-            role="img"
-            aria-label="Google Maps kaart van De Goede Hoop Koshuis, Burnettstraat, Hatfield, Pretoria — plsaas 'n ingeboude kaart hier"
           >
-            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.4rem" }}>
-              <MapPin size={15} aria-hidden="true" /> Kaart Plaasvervanger
-            </p>
-            <p style={{ color: "rgba(250,247,242,0.65)", fontSize: "0.9rem" }}>
-              Burnettstraat, Hatfield, Pretoria
-            </p>
-            <p style={{ color: "rgba(250,247,242,0.45)", fontSize: "0.78rem", marginTop: "0.5rem" }}>
-              [Plaas Google Maps iframe hier — gebruik die embed-kode van Google Maps]
-            </p>
+            <iframe
+              src="https://www.google.com/maps?q=De+Goede+Hoop+Koshuis,-25.7504754,28.2417351&z=17&output=embed"
+              width="100%"
+              height="360"
+              style={{ display: "block", border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps kaart van De Goede Hoop Koshuis, Burnettstraat, Hatfield, Pretoria"
+            />
           </div>
         </div>
       </section>
