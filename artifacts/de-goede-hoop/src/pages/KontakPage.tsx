@@ -22,7 +22,7 @@ const contactCards: ContactCard[] = [
   {
     icon: <MessageCircle size={22} />,
     title: "Algemene navrae",
-    description: "Het jy 'n vraag oor die koshuis? Kontak ons gerus — ons beantwoord navrae so gou as moontlik.",
+    description: "Algemene navrae: bestuur@degoedehoop.co.za. Telefoon Nommer: 066 264 5433.",
     actions: [
       { label: "WhatsApp ons", href: whatsappLink(), isWhatsApp: true },
       { label: "Stuur e-pos", href: mailtoLink("Algemene Navraag - De Goede Hoop"), isEmail: true },
@@ -102,14 +102,14 @@ export default function KontakPage() {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
               </div>
-              <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1a2744" }}>E-pos</h2>
+              <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1a2744" }}>Stuur 'n e-pos</h2>
               <a
                 href={mailtoLink()}
                 style={{ color: "#1a2744", fontWeight: 600, fontSize: "1rem", textDecoration: "none", borderBottom: "2px solid #3d52a0", paddingBottom: "1px", display: "inline-block" }}
               >
                 {siteConfig.email}
               </a>
-              <p style={{ color: "#555", fontSize: "0.88rem" }}>Ons antwoord binne 1–2 werksdae.</p>
+              <p style={{ color: "#555", fontSize: "0.88rem" }}>Neem asseblief kennis dat ons sal poog om jou navrae binne die volgende 48 uur te hanteer.</p>
             </div>
 
             {/* WhatsApp */}
@@ -128,7 +128,7 @@ export default function KontakPage() {
               >
                 {siteConfig.whatsappDisplay}
               </a>
-              <p style={{ color: "#555", fontSize: "0.88rem" }}>Gewoonlik binne 'n paar uur beantwoord.</p>
+              <p style={{ color: "#555", fontSize: "0.88rem" }}>Kantoorure: Maandae tot Donderdae 08:00–16:30, Vrydae 08:00–15:00.</p>
             </div>
 
             {/* Address */}

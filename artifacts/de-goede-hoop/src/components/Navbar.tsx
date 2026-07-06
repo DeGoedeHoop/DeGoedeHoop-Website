@@ -5,11 +5,11 @@ import logoWhite from "@/assets/logo-white.png";
 
 const navLinks = [
   { href: "/", label: "Tuis" },
-  { href: "/oor-ons", label: "Oor Ons" },
+  { href: "/oor-ons", label: "Oor ons" },
   { href: "/verblyf", label: "Verblyf" },
   { href: "/eerstejaars", label: "Eerstejaars" },
   { href: "/aansoek", label: "Aansoek" },
-  { href: "/kontak", label: "Kontak" },
+  { href: "/kontak", label: "Kontak ons" },
 ];
 
 export default function Navbar() {
@@ -120,7 +120,7 @@ export default function Navbar() {
                 whiteSpace: "nowrap",
               }}
             >
-              Doen aansoek
+              Doen Aansoek
             </a>
           </div>
 
@@ -216,7 +216,7 @@ export default function Navbar() {
                     display: "block",
                   }}
                 >
-                  Doen aansoek
+                  Doen Aansoek
                 </Link>
                 <a
                   href={whatsappLink()}

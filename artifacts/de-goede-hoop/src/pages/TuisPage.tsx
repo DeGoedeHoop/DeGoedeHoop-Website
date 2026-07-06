@@ -22,9 +22,9 @@ const waaromCards = [
   },
   {
     icon: <MapPin size={22} />,
-    title: "Ligging",
+    title: "Waar is de goede hoop?",
     description:
-      "Sentraal geleë in Hatfield, naby Tuks se sportgronde en die Hatfield-kampus. Loop, fiets of ry — jy is altyd naby alles wat tel.",
+      "De Goede Hoop is geleë in Burnettstraat, Hatfield in Pretoria, sowat 200 m van Tuks se sportgronde en sowat 1 km van die Hatfield-kampus.",
   },
   {
     icon: <Church size={22} />,
@@ -98,8 +98,11 @@ export default function TuisPage() {
               margin: "0 auto 2rem",
             }}
           >
-            De Goede Hoop bied 'n veilige, Christelike en Afrikaanse koshuisomgewing waar studente
-            kan groei, behoort en hul studentwees met selfvertroue uitleef.
+            De Goede Hoop-koshuis bied ’n tuiste vir dinamiese studente met Christelike waardes en ’n
+            passie vir Afrikaans; ’n tuiste waar jy as jongmens in gesonde studentetradisies kan deel
+            en jou studentwees met selfvertroue in Afrikaans kan uitleef. Die koshuis het sowel ’n
+            mans- as damesvleuel – mans en dames kan dus saam op een perseel, maar afsonderlik in
+            verskillende vleuels woon.
           </p>
           <div
             style={{
@@ -281,10 +284,10 @@ export default function TuisPage() {
               lineHeight: 1.2,
             }}
           >
-            Stel belang in verblyf by De Goede Hoop?
+            Waar bly jy as jy nie by jou ma bly nie?
           </h2>
           <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            Doen aansoek vandag of stuur ons 'n WhatsApp-boodskap om meer te wete te kom.
+            Bly in De Goede Hoop-koshuis.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
             <CTAButton href="/aansoek" variant="primary" large>

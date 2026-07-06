@@ -59,16 +59,16 @@ export default function OorOnsPage() {
             <div>
               <SectionHeading
                 eyebrow="Ons identiteit"
-                title="Wie ons is"
+                title="Waardes en kultuur"
               />
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-                De Goede Hoop is meer as net verblyf. Dit is 'n studentehuis waar jongmense deel word van 'n gemeenskap, vriendskappe bou, verantwoordelikheid leer neem en hul studentetyd met selfvertroue aanpak.
+                VISIE: Om ’n inklusiewe Christelike, Afrikaner koshuis uit te bou waar ons strewe na uitnemendheid, respek vir mekaar en ander, en integriteit hand aan hand loop met ryke koshuistradisies en ’n prestasiekultuur. De Goede Hoop koshuis wil ’n tuiste en atmosfeer vir studente skep waarin vandag se studente tot môre se leiers geslyp word.
               </p>
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-                Geleë in Burnettstraat, Hatfield, Pretoria, bedien ons studente van verskillende universiteite en hoëronderwysinstellings in die omgewing. Ons koshuis het apart mans- en damesvleuels op dieselfde perseel, wat 'n unieke samestelling van sosiale interaksie en geskeidenheid bied.
+                Missie: Ons missie is om elke inwoner van De Goede Hoop in staat te stel om hul volle potensiaal in verskeie fasette van hul lewe te bereik. Dit kan slegs bereik word deur blootstelling aan ’n verskeidenheid aktiwiteite, projekte en aksies wat elkeen bemagtig om as persoon te ontwikkel en optimaal te presteer.
               </p>
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8 }}>
-                By ons word studente nie net in 'n kamer geplaas nie — hulle word deel van 'n familie.
+                Huiskomitee (HK): Sowel die mans as die dames het vyf huiskomitee- (HK-)lede wat jaarliks deur De Goede Hoop-studente verkies word. Die vyf HK-lede bestuur in totaal nege portefeuljes wat saam die kultuur, aktiwiteite, prestasie en etos in die koshuis bepaal. Onder leiding van die koshuisouers neem die HK volle verantwoordelikheid vir die suksesvolle bestuur van die koshuis. Hulle is dus daarvoor verantwoordelik om die toekomstige sukses van De Goede Hoop te verseker.
               </p>
             </div>
             <div
@@ -88,7 +88,7 @@ export default function OorOnsPage() {
                   fontStyle: "italic",
                 }}
               >
-                "De Goede Hoop is meer as net verblyf. Dit is 'n studentehuis waar jongmense deel word van 'n gemeenskap, vriendskappe bou, verantwoordelikheid leer neem en hul studentetyd met selfvertroue aanpak."
+                "Dit is vir ons ’n groot voorreg om deel te wees van die De Goede Hoop-familie en om saam te bou aan die voortgesette sukses en groei van die koshuis."
               </p>
               <p style={{ color: "#888", fontSize: "0.85rem", marginTop: "1rem", fontWeight: 500 }}>
                 — De Goede Hoop Bestuur
@@ -159,10 +159,10 @@ export default function OorOnsPage() {
                 Afsonderlike vleuels, gedeelde gemeenskap
               </h3>
               <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
-                De Goede Hoop het afsonderlike mans- en damesvleuels op dieselfde perseel. Studente geniet privaatheid en veiligheid terwyl hulle steeds deel van 'n groter gemeenskap bly.
+                By De Goede Hoop glo ons dat ’n koshuis veel meer as net ’n plek van verblyf moet wees. Dit moet ’n omgewing wees waar studente kan groei, hulself kan uitleef en die geleentheid kry om hul volle potensiaal te ontdek. Ons streef daarna om ’n gesonde koshuisomgewing te skep waarin elke inwoner veilig, welkom en deel van ’n groter gemeenskap kan voel.
               </p>
               <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.8 }}>
-                Gedeelde gemeenskaplike ruimtes bied geleenthede vir vriendskap, samewerking en geselligheid in 'n gestruktureerde omgewing.
+                Jeugontwikkeling en persoonlike groei vorm ’n belangrike deel van De Goede Hoop se kultuur. Ons wil inwoners blootstel aan ervarings, verantwoordelikhede en geleenthede wat hul denkraamwerk verbreed en hulle bemagtig met vaardighede wat hulle nie net tydens hul studentetyd nie, maar ook in hul toekomstige loopbane en persoonlike lewens kan gebruik.
               </p>
             </div>
             <div>
@@ -170,10 +170,10 @@ export default function OorOnsPage() {
                 Gestruktureerd en studievriendlik
               </h3>
               <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.8, marginBottom: "1rem" }}>
-                Ons koshuis is ontwerp om studente te help om te konsentreer op dit wat saak maak: hul studies, persoonlike groei en geestelike welstand.
+                Terselfdertyd is dit vir ons belangrik om ’n ondersteunende en ontfermende omgewing te skep waarin elke student werklik kan voel dat De Goede Hoop hul huis weg van die huis is.
               </p>
               <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.8 }}>
-                Reëls en grense word met omgee gehandhaaf om 'n veilige en produktiewe omgewing vir almal te verseker.
+                Een van die grootste voorregte wat ons as De Goede Hoop-bestuur het, is om ’n rol te speel in die ontwikkeling van jongmense en om saam met hulle aan hul toekoms te bou. Ons glo dat De Goede Hoop ’n omgewing kan bied waarin elke inwoner nie net hoop vir die toekoms het nie, maar ook die geleentheid kry om te leer hoe om doelgerig aan hul eie toekoms te bou.
               </p>
             </div>
           </div>

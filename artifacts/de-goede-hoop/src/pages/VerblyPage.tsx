@@ -4,12 +4,12 @@ import CTAButton from "@/components/CTAButton";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
 const amenities = [
-  { icon: <Home size={20} />, title: "Mans- en Damesvleuels", description: "Afsonderlike vleuels vir mans- en damesestudente op dieselfde perseel — privaatheid én gemeenskap." },
-  { icon: <Wifi size={20} />, title: "Wi-Fi", description: "Wi-Fi indien van toepassing. Kontak bestuur vir die mees onlangse inligting oor internetskakel." },
-  { icon: <Car size={20} />, title: "Parkering", description: "Parkering indien van toepassing. Beskikbaarheid wissel — navraag welkom by bestuur." },
-  { icon: <Shirt size={20} />, title: "Was- en Droogfasiliteite", description: "Wasgoed/wassers indien van toepassing. Kontak bestuur vir besonderhede oor wasgeriewe." },
-  { icon: <UtensilsCrossed size={20} />, title: "Kombuis / Gemeenskaplike Ruimtes", description: "Kombuis en gemeenskaplike areas indien van toepassing. Bespreek geriewe direk met bestuur." },
-  { icon: <BookOpen size={20} />, title: "Studieruimte", description: "Studievriendlike omgewing met rustige areas waar studente gefokus kan werk." },
+  { icon: <Home size={20} />, title: "Mans- en Damesvleuels", description: "Elke enkelkamer beskik oor ’n enkelbedbasis, lessenaar, boekrak en ingeboude kas. Jy moet dus net jou eie matras, beddegoed, gordyne (standaardlengte), stoel, asblik en persoonlike goed saam te bring. Badkamers is toegerus met toilette, wasbakke, storte en in sommige eenhede baddens. Bring jou eie stortmatjie saam." },
+  { icon: <Wifi size={20} />, title: "Wi-Fi", description: "Wi-Fi." },
+  { icon: <Car size={20} />, title: "Parkering", description: "Veilige parkering." },
+  { icon: <Shirt size={20} />, title: "Was- en Droogfasiliteite", description: "Wasgeriewe met wasmasjiene en tuimeldroërs. Industriële wasmasjiene en tuimeldroërs is beskikbaar." },
+  { icon: <UtensilsCrossed size={20} />, title: "Kombuis / Gemeenskaplike Ruimtes", description: "Kombuise is met ’n ys-/vrieskas en induksiestoof toegerus. Studente is verantwoordelik vir hul eie kastrolle, panne, glase, borde, bekers en eetgerei. Kroegyskassies word in die kamers toegelaat. Eie skoonmaakmiddels, lappies en sponsies moet egter voorsien word." },
+  { icon: <BookOpen size={20} />, title: "Studieruimte", description: "’n Klubhuis, braaigeriewe en lieflike grasperke." },
 ];
 
 export default function VerblyPage() {
@@ -37,7 +37,7 @@ export default function VerblyPage() {
               lineHeight: 1.15,
             }}
           >
-            Verblyf &amp; Geriewe
+            Verblyf
           </h1>
           <p style={{ color: "rgba(250,247,242,0.82)", fontSize: "1.05rem", lineHeight: 1.75 }}>
             'n Veilige, gestruktureerde tuiste naby die hartklop van Hatfield.
@@ -50,15 +50,15 @@ export default function VerblyPage() {
         <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "3rem", alignItems: "center" }}>
             <div>
-              <SectionHeading eyebrow="Verblyf" title="'n Veilige studenteomgewing" />
+              <SectionHeading eyebrow="Verblyf" title="Wat bied De Goede Hoop jou?" />
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-                De Goede Hoop bied 'n gestruktureerde koshuisomgewing waar veiligheid, privaatheid en gemeenskap saamkom. Ons perseel is ontwerp met die moderne student se behoeftes in gedagte.
+                Studente bly in hul eie kamers. Daar is verskillende tipes kamers: koshuiskamers, gedeelde woonstelle, kommunes en tuinwoonstelle. Mans en dames woon apart.
               </p>
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-                Met aparte mans- en damesvleuels op een terrein, geniet studente die voordele van nabywees terwyl gepaste grense gehandhaaf word.
+                Elektrisiteit en parkering word by die huurbedrag ingesluit. Geen etes word verskaf nie aangesien daar kombuise is.
               </p>
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8 }}>
-                Ons ligging in Burnettstraat, Hatfield, maak ons ideaal vir studente aan nabygeleë instellings — {siteConfig.locationDescription}.
+                Die koshuis is omring met ’n elektriese heining en hek, met ’n 24 uur-sekuriteitswag. Gedeelde areas word weeksdae skoongemaak. Kamerplasings word deur De Goede Hoop gedoen, nadat die keuringsproses voltooi is.
               </p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
@@ -95,7 +95,7 @@ export default function VerblyPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
           <SectionHeading
             eyebrow="Geriewe"
-            title="Wat De Goede Hoop bied"
+            title="Geriewe sluit in"
             center
           />
           <div
@@ -112,7 +112,7 @@ export default function VerblyPage() {
           >
             <Info size={19} style={{ color: "#2c3d7a", flexShrink: 0, marginTop: "2px" }} aria-hidden="true" />
             <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.7 }}>
-              <strong>Let wel:</strong> Geriewe kan volgens beskikbaarheid en jaarlikse reëlings verskil. Kontak bestuur vir die mees onlangse besonderhede oor kamerbeskikbaarheid en geriewe.
+              <strong>Let wel:</strong> Wi-Fi; wasgeriewe met wasmasjiene en tuimeldroërs; veilige parkering; en ’n klubhuis, braaigeriewe en lieflike grasperke.
             </p>
           </div>
           <div
@@ -202,7 +202,7 @@ export default function VerblyPage() {
             Wil jy meer weet oor kamers en beskikbaarheid?
           </h2>
           <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            Kontak ons bestuur direk vir die mees onlangse inligting oor beskikbaarheid, huurkoste en aansoekproses.
+            Vir enige navrae of verdere inligting, stuur asseblief ’n epos na bestuur@degoedehoop.co.za.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
             <a
