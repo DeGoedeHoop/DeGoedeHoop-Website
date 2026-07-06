@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { HeartHandshake, MapPin, Church, Scale, ShieldCheck, Phone, BookOpen } from "lucide-react";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 import SectionHeading from "@/components/SectionHeading";
 import InfoCard from "@/components/InfoCard";
@@ -14,25 +15,25 @@ const trustHighlights = [
 
 const waaromCards = [
   {
-    icon: "🤝",
+    icon: <HeartHandshake size={22} />,
     title: "Gemeenskap",
     description:
       "By De Goede Hoop word jy deel van 'n hegte studentegemeenskap waar vriende lewenslange metgeselle word. Koshuislewe gaan oor meer as net 'n kamer — dit gaan oor mense.",
   },
   {
-    icon: "📍",
+    icon: <MapPin size={22} />,
     title: "Ligging",
     description:
       "Sentraal geleë in Hatfield, naby Tuks se sportgronde en die Hatfield-kampus. Loop, fiets of ry — jy is altyd naby alles wat tel.",
   },
   {
-    icon: "✝️",
+    icon: <Church size={22} />,
     title: "Waardes",
     description:
       "Ons koshuis is gegrond in Christelike beginsels en Afrikaanse kultuur. Hier word studente aangemoedig om met integriteit en deernis te leef.",
   },
   {
-    icon: "⚖️",
+    icon: <Scale size={22} />,
     title: "Balans",
     description:
       "Akademie, sosiale lewe en persoonlike groei gaan hand aan hand. De Goede Hoop bied 'n gestruktureerde omgewing wat studente help om alle fasette van studentwees te balanseer.",
@@ -215,10 +216,10 @@ export default function TuisPage() {
             }}
           >
             {[
-              { icon: "🛡️", text: "Veilige, gestruktureerde omgewing met duidelike reëls en grense" },
-              { icon: "📞", text: "Bestuur is bereikbaar via e-pos en WhatsApp vir enige navrae" },
-              { icon: "✝️", text: "Gegrond in Christelike waardes — respek, gemeenskap en verantwoordelikheid" },
-              { icon: "📚", text: "Studievriendlike atmosfeer wat akademiese sukses ondersteun" },
+              { icon: <ShieldCheck size={22} />, text: "Veilige, gestruktureerde omgewing met duidelike reëls en grense" },
+              { icon: <Phone size={22} />, text: "Bestuur is bereikbaar via e-pos en WhatsApp vir enige navrae" },
+              { icon: <Church size={22} />, text: "Gegrond in Christelike waardes — respek, gemeenskap en verantwoordelikheid" },
+              { icon: <BookOpen size={22} />, text: "Studievriendlike atmosfeer wat akademiese sukses ondersteun" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -229,7 +230,22 @@ export default function TuisPage() {
                   textAlign: "center",
                 }}
               >
-                <div style={{ fontSize: "1.8rem", marginBottom: "0.75rem" }} aria-hidden="true">{item.icon}</div>
+                <div
+                  style={{
+                    width: "44px",
+                    height: "44px",
+                    borderRadius: "12px",
+                    backgroundColor: "rgba(61,82,160,0.18)",
+                    color: "#6b7ec7",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "0 auto 0.75rem",
+                  }}
+                  aria-hidden="true"
+                >
+                  {item.icon}
+                </div>
                 <p style={{ color: "rgba(250,247,242,0.85)", fontSize: "0.9rem", lineHeight: 1.65 }}>{item.text}</p>
               </div>
             ))}

@@ -1,14 +1,15 @@
+import { Home, Wifi, Car, Shirt, UtensilsCrossed, BookOpen, Info, MapPin, Mail } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
 const amenities = [
-  { icon: "🏠", title: "Mans- en Damesvleuels", description: "Afsonderlike vleuels vir mans- en damesestudente op dieselfde perseel — privaatheid én gemeenskap." },
-  { icon: "🛜", title: "Wi-Fi", description: "Wi-Fi indien van toepassing. Kontak bestuur vir die mees onlangse inligting oor internetskakel." },
-  { icon: "🚗", title: "Parkering", description: "Parkering indien van toepassing. Beskikbaarheid wissel — navraag welkom by bestuur." },
-  { icon: "👕", title: "Was- en Droogfasiliteite", description: "Wasgoed/wassers indien van toepassing. Kontak bestuur vir besonderhede oor wasgeriewe." },
-  { icon: "🍳", title: "Kombuis / Gemeenskaplike Ruimtes", description: "Kombuis en gemeenskaplike areas indien van toepassing. Bespreek geriewe direk met bestuur." },
-  { icon: "📚", title: "Studieruimte", description: "Studievriendlike omgewing met rustige areas waar studente gefokus kan werk." },
+  { icon: <Home size={20} />, title: "Mans- en Damesvleuels", description: "Afsonderlike vleuels vir mans- en damesestudente op dieselfde perseel — privaatheid én gemeenskap." },
+  { icon: <Wifi size={20} />, title: "Wi-Fi", description: "Wi-Fi indien van toepassing. Kontak bestuur vir die mees onlangse inligting oor internetskakel." },
+  { icon: <Car size={20} />, title: "Parkering", description: "Parkering indien van toepassing. Beskikbaarheid wissel — navraag welkom by bestuur." },
+  { icon: <Shirt size={20} />, title: "Was- en Droogfasiliteite", description: "Wasgoed/wassers indien van toepassing. Kontak bestuur vir besonderhede oor wasgeriewe." },
+  { icon: <UtensilsCrossed size={20} />, title: "Kombuis / Gemeenskaplike Ruimtes", description: "Kombuis en gemeenskaplike areas indien van toepassing. Bespreek geriewe direk met bestuur." },
+  { icon: <BookOpen size={20} />, title: "Studieruimte", description: "Studievriendlike omgewing met rustige areas waar studente gefokus kan werk." },
 ];
 
 export default function VerblyPage() {
@@ -109,7 +110,7 @@ export default function VerblyPage() {
               gap: "0.75rem",
             }}
           >
-            <span style={{ color: "#2c3d7a", fontSize: "1.1rem", flexShrink: 0, marginTop: "2px" }}>ℹ️</span>
+            <Info size={19} style={{ color: "#2c3d7a", flexShrink: 0, marginTop: "2px" }} aria-hidden="true" />
             <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.7 }}>
               <strong>Let wel:</strong> Geriewe kan volgens beskikbaarheid en jaarlikse reëlings verskil. Kontak bestuur vir die mees onlangse besonderhede oor kamerbeskikbaarheid en geriewe.
             </p>
@@ -132,7 +133,22 @@ export default function VerblyPage() {
                   boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
                 }}
               >
-                <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }} aria-hidden="true">{a.icon}</div>
+                <div
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    borderRadius: "12px",
+                    backgroundColor: "#3d52a0",
+                    color: "#faf7f2",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "0.75rem",
+                  }}
+                  aria-hidden="true"
+                >
+                  {a.icon}
+                </div>
                 <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1a2744", marginBottom: "0.5rem" }}>{a.title}</h3>
                 <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.65 }}>{a.description}</p>
               </div>
@@ -161,8 +177,8 @@ export default function VerblyPage() {
             role="img"
             aria-label="Google Maps kaart van De Goede Hoop Koshuis, Burnettstraat, Hatfield, Pretoria — plsaas 'n ingeboude kaart hier"
           >
-            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
-              📍 Kaart Plaasvervanger
+            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.4rem" }}>
+              <MapPin size={15} aria-hidden="true" /> Kaart Plaasvervanger
             </p>
             <p style={{ color: "rgba(250,247,242,0.65)", fontSize: "0.9rem" }}>
               Burnettstraat, Hatfield, Pretoria
@@ -230,7 +246,7 @@ export default function VerblyPage() {
                 textDecoration: "none",
               }}
             >
-              ✉️ Stuur 'n e-pos
+              <Mail size={16} aria-hidden="true" /> Stuur 'n e-pos
             </a>
           </div>
         </div>

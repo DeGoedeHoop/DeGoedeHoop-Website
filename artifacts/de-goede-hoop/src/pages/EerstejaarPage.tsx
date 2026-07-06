@@ -1,3 +1,4 @@
+import { HeartHandshake, ClipboardList, Compass, BookOpen, FileDown } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import { whatsappLink, mailtoLink } from "@/data/siteConfig";
@@ -7,10 +8,10 @@ import { whatsappLink, mailtoLink } from "@/data/siteConfig";
 const PDF_PATH = "/de-goede-hoop-inligtingsbrief-2027.pdf";
 
 const expectations = [
-  { icon: "🤝", title: "Verwelkoming", description: "Eerstejaars word spesiaal verwelkom in ons gemeenskap. Jy sal nie alleen wees tydens die oorgang na universiteitslewe nie." },
-  { icon: "📋", title: "Oriëntering", description: "Ons bied oriëntering aan om jou te help inskakel, reëls en verwagtinge te verstaan en vriende te maak." },
-  { icon: "🧭", title: "Ondersteuning", description: "Ouer studente en bestuur is beskikbaar om eerstejaars te begelei en te ondersteun deur die eerste weke." },
-  { icon: "📚", title: "Akademiese Ondersteuning", description: "Ons omgewing is gestruktureerd om jou akademies te help slaag. Stiltetye en studieruimtes help jou fokus." },
+  { icon: <HeartHandshake size={20} />, title: "Verwelkoming", description: "Eerstejaars word spesiaal verwelkom in ons gemeenskap. Jy sal nie alleen wees tydens die oorgang na universiteitslewe nie." },
+  { icon: <ClipboardList size={20} />, title: "Oriëntering", description: "Ons bied oriëntering aan om jou te help inskakel, reëls en verwagtinge te verstaan en vriende te maak." },
+  { icon: <Compass size={20} />, title: "Ondersteuning", description: "Ouer studente en bestuur is beskikbaar om eerstejaars te begelei en te ondersteun deur die eerste weke." },
+  { icon: <BookOpen size={20} />, title: "Akademiese Ondersteuning", description: "Ons omgewing is gestruktureerd om jou akademies te help slaag. Stiltetye en studieruimtes help jou fokus." },
 ];
 
 const parentInfo = [
@@ -80,7 +81,22 @@ export default function EerstejaarPage() {
                   boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
                 }}
               >
-                <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }} aria-hidden="true">{e.icon}</div>
+                <div
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    borderRadius: "12px",
+                    backgroundColor: "#3d52a0",
+                    color: "#faf7f2",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "0.75rem",
+                  }}
+                  aria-hidden="true"
+                >
+                  {e.icon}
+                </div>
                 <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1a2744", marginBottom: "0.5rem" }}>{e.title}</h3>
                 <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.65 }}>{e.description}</p>
               </div>
@@ -209,7 +225,7 @@ export default function EerstejaarPage() {
                 textDecoration: "none",
               }}
             >
-              📄 Laai inligtingsbrief af
+              <FileDown size={17} aria-hidden="true" /> Laai inligtingsbrief af
             </a>
           </div>
           <p style={{ color: "#888", fontSize: "0.78rem", marginTop: "1rem" }}>

@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
+
 interface InfoCardProps {
-  icon?: string;
+  icon?: ReactNode;
   title: string;
   description: string;
   accent?: boolean;
@@ -21,7 +23,21 @@ export default function InfoCard({ icon, title, description, accent = false }: I
       }}
     >
       {icon && (
-        <div style={{ fontSize: "2rem", lineHeight: 1 }} aria-hidden="true">{icon}</div>
+        <div
+          style={{
+            width: "48px",
+            height: "48px",
+            borderRadius: "12px",
+            backgroundColor: accent ? "#3d52a0" : "#1a2744",
+            color: "#faf7f2",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          aria-hidden="true"
+        >
+          {icon}
+        </div>
       )}
       <h3 style={{
         fontFamily: "Playfair Display, serif",

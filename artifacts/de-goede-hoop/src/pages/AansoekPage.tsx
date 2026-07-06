@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Info, Mail } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
@@ -131,7 +132,7 @@ Gestuur via degoedehoop.co.za`;
               gap: "0.75rem",
             }}
           >
-            <span style={{ color: "#2c3d7a", fontSize: "1.1rem", flexShrink: 0 }}>ℹ️</span>
+            <Info size={19} style={{ color: "#2c3d7a", flexShrink: 0 }} aria-hidden="true" />
             <p style={{ color: "#555", fontSize: "0.88rem", lineHeight: 1.7 }}>
               Hierdie aansoekblad stuur jou besonderhede via jou e-poskliënt na{" "}
               <strong>{siteConfig.email}</strong>. Geen besonderhede word op 'n bediener gestoor nie.
@@ -340,7 +341,7 @@ Gestuur via degoedehoop.co.za`;
                   textDecoration: "none",
                 }}
               >
-                ✉️ Stuur e-pos na {siteConfig.email}
+                <Mail size={16} aria-hidden="true" /> Stuur e-pos na {siteConfig.email}
               </a>
             </div>
           </div>

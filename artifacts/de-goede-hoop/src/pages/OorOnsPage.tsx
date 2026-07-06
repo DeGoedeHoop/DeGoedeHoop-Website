@@ -1,14 +1,15 @@
+import { Church, HeartHandshake, BookOpen, Sprout, Home, Leaf } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import { whatsappLink } from "@/data/siteConfig";
 
 const values = [
-  { icon: "✝️", title: "Geloof", description: "Ons grondwet en daaglikse lewe is gegrond in Christelike beginsels. Geloof, hoop en liefde dra ons gemeenskap." },
-  { icon: "🤝", title: "Respek", description: "Elke student word met waardigheid behandel. Ons vier verskille en bou op gedeelde waardes." },
-  { icon: "📖", title: "Verantwoordelikheid", description: "Studente leer om verantwoordelikheid te neem vir hul akademie, hul gedrag en hul bydrae tot die gemeenskap." },
-  { icon: "🌱", title: "Groei", description: "Persoonlike en geestelike groei word aangemoedig. De Goede Hoop is 'n plek waar jy jou volle potensiaal bereik." },
-  { icon: "🏠", title: "Gemeenskap", description: "Ons glo in die krag van gemeenskap. Vriendskap, saamwees en ondersteuning maak De Goede Hoop 'n tuiste." },
-  { icon: "🌿", title: "Afrikaanse Kultuur", description: "Ons vier die rykdom van die Afrikaanse taal en kultuur as deel van ons identiteit en saamhorigheid." },
+  { icon: <Church size={20} />, title: "Geloof", description: "Ons grondwet en daaglikse lewe is gegrond in Christelike beginsels. Geloof, hoop en liefde dra ons gemeenskap." },
+  { icon: <HeartHandshake size={20} />, title: "Respek", description: "Elke student word met waardigheid behandel. Ons vier verskille en bou op gedeelde waardes." },
+  { icon: <BookOpen size={20} />, title: "Verantwoordelikheid", description: "Studente leer om verantwoordelikheid te neem vir hul akademie, hul gedrag en hul bydrae tot die gemeenskap." },
+  { icon: <Sprout size={20} />, title: "Groei", description: "Persoonlike en geestelike groei word aangemoedig. De Goede Hoop is 'n plek waar jy jou volle potensiaal bereik." },
+  { icon: <Home size={20} />, title: "Gemeenskap", description: "Ons glo in die krag van gemeenskap. Vriendskap, saamwees en ondersteuning maak De Goede Hoop 'n tuiste." },
+  { icon: <Leaf size={20} />, title: "Afrikaanse Kultuur", description: "Ons vier die rykdom van die Afrikaanse taal en kultuur as deel van ons identiteit en saamhorigheid." },
 ];
 
 export default function OorOnsPage() {
@@ -124,7 +125,22 @@ export default function OorOnsPage() {
                   boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
                 }}
               >
-                <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }} aria-hidden="true">{v.icon}</div>
+                <div
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    borderRadius: "12px",
+                    backgroundColor: "#1a2744",
+                    color: "#faf7f2",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "0.75rem",
+                  }}
+                  aria-hidden="true"
+                >
+                  {v.icon}
+                </div>
                 <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1a2744", marginBottom: "0.5rem" }}>{v.title}</h3>
                 <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.7 }}>{v.description}</p>
               </div>

@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+import { MessageCircle, ClipboardList, GraduationCap, Users, MapPin } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
@@ -10,7 +12,7 @@ type ContactAction = {
 };
 
 type ContactCard = {
-  icon: string;
+  icon: ReactNode;
   title: string;
   description: string;
   actions: ContactAction[];
@@ -18,7 +20,7 @@ type ContactCard = {
 
 const contactCards: ContactCard[] = [
   {
-    icon: "💬",
+    icon: <MessageCircle size={22} />,
     title: "Algemene navrae",
     description: "Het jy 'n vraag oor die koshuis? Kontak ons gerus — ons beantwoord navrae so gou as moontlik.",
     actions: [
@@ -27,7 +29,7 @@ const contactCards: ContactCard[] = [
     ],
   },
   {
-    icon: "📋",
+    icon: <ClipboardList size={22} />,
     title: "Aansoeke",
     description: "Klaar om aansoek te doen? Doen aansoek op ons Aansoek-bladsy of kontak ons direk.",
     actions: [
@@ -36,7 +38,7 @@ const contactCards: ContactCard[] = [
     ],
   },
   {
-    icon: "🎓",
+    icon: <GraduationCap size={22} />,
     title: "Eerstejaarsinligting",
     description: "Is jy 'n eerstejaar of ouer van 'n eerstejaar? Kontak ons vir spesifieke eerstejaarsnavrae.",
     actions: [
@@ -45,7 +47,7 @@ const contactCards: ContactCard[] = [
     ],
   },
   {
-    icon: "👨‍👩‍👧",
+    icon: <Users size={22} />,
     title: "Ouer-navrae",
     description: "Ouers is welkom om met ons te kontak oor hul kind se welsyn, verblyf of enige bekommernisse.",
     actions: [
@@ -156,8 +158,8 @@ export default function KontakPage() {
             role="img"
             aria-label="Google Maps kaart — Burnettstraat, Hatfield, Pretoria"
           >
-            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
-              📍 Google Maps Kaart Plaasvervanger
+            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.4rem" }}>
+              <MapPin size={15} aria-hidden="true" /> Google Maps Kaart Plaasvervanger
             </p>
             <p style={{ color: "#888", fontSize: "0.9rem" }}>Burnettstraat, Hatfield, Pretoria</p>
             <p style={{ color: "#aaa", fontSize: "0.78rem", marginTop: "0.5rem" }}>
@@ -182,7 +184,21 @@ export default function KontakPage() {
                   gap: "0.75rem",
                 }}
               >
-                <div style={{ fontSize: "1.75rem" }} aria-hidden="true">{card.icon}</div>
+                <div
+                  style={{
+                    width: "44px",
+                    height: "44px",
+                    borderRadius: "12px",
+                    backgroundColor: "#1a2744",
+                    color: "#faf7f2",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                  aria-hidden="true"
+                >
+                  {card.icon}
+                </div>
                 <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1a2744" }}>{card.title}</h3>
                 <p style={{ color: "#555", fontSize: "0.88rem", lineHeight: 1.65, flex: 1 }}>{card.description}</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginTop: "0.5rem" }}>

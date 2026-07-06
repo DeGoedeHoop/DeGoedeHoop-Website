@@ -1,0 +1,1 @@
+- [De Goede Hoop icon style](de-goede-hoop-icons.md) — emoji replaced site-wide with lucide-react icons in navy/royal-blue badges; follow this pattern for new cards.
