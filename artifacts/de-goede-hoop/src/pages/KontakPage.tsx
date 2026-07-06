@@ -36,6 +36,9 @@ export default function KontakPage() {
       {/* Contact info */}
       <section style={{ backgroundColor: "#faf7f2", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+          <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "3rem" }}>
+            Ons verstaan dat die keuse van studenteverblyf ’n belangrike besluit vir beide studente en ouers is. Studente én ouers is daarom welkom om ons te kontak met enige navrae oor De Goede Hoop, ons verblyfopsies, geriewe, huurkoste, beskikbaarheid of die aansoekproses. Ons bestuurspan help graag met die nodige inligting om julle vrae te beantwoord en meer duidelikheid te gee oor wat studente by De Goede Hoop kan verwag.
+          </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2.5rem", marginBottom: "4rem" }}>
             {/* Email */}
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
@@ -87,11 +90,6 @@ export default function KontakPage() {
               <p style={{ color: "#555", fontSize: "0.88rem", lineHeight: 1.6 }}>{siteConfig.locationDescription}.</p>
             </div>
           </div>
-
-          {/* Intro text above map */}
-          <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
-            Ons verstaan dat die keuse van studenteverblyf ’n belangrike besluit vir beide studente en ouers is. Studente én ouers is daarom welkom om ons te kontak met enige navrae oor De Goede Hoop, ons verblyfopsies, geriewe, huurkoste, beskikbaarheid of die aansoekproses. Ons bestuurspan help graag met die nodige inligting om julle vrae te beantwoord en meer duidelikheid te gee oor wat studente by De Goede Hoop kan verwag.
-          </p>
 
           {/* Google Maps embed */}
           <div
