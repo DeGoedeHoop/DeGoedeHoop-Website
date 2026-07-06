@@ -232,7 +232,7 @@ export default function Navbar() {
                     display: "block",
                   }}
                 >
-                  WhatsApp ons
+                  Kontak Bestuur
                 </a>
               </div>
             </nav>
