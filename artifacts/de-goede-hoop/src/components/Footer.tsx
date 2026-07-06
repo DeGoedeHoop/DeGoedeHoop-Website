@@ -27,6 +27,7 @@ const quickLinks = [
   { href: "/", label: "Tuis" },
   { href: "/oor-ons", label: "Oor Ons" },
   { href: "/verblyf", label: "Verblyf" },
+  { href: "/aansoek", label: "Doen Aansoek" },
   { href: "/kontak", label: "Kontak Ons" },
   { href: "/popi", label: "POPI / Privaatheid" },
 ];

@@ -5,6 +5,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import TuisPage from "@/pages/TuisPage";
 import OorOnsPage from "@/pages/OorOnsPage";
 import VerblyPage from "@/pages/VerblyPage";
+import AansoekPage from "@/pages/AansoekPage";
 import KontakPage from "@/pages/KontakPage";
 import PopiPage from "@/pages/PopiPage";
 
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/" component={() => <Layout><TuisPage /></Layout>} />
       <Route path="/oor-ons" component={() => <Layout><OorOnsPage /></Layout>} />
       <Route path="/verblyf" component={() => <Layout><VerblyPage /></Layout>} />
+      <Route path="/aansoek" component={() => <Layout><AansoekPage /></Layout>} />
       <Route path="/kontak" component={() => <Layout><KontakPage /></Layout>} />
       <Route path="/popi" component={() => <Layout><PopiPage /></Layout>} />
       <Route component={NotFound} />

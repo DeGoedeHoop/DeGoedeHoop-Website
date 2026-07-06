@@ -193,7 +193,7 @@ export default function OorOnsPage() {
             Studente kies De Goede Hoop nie net vir die geriewe of ligging nie — hulle kies dit vir die gevoel van tuishoort. Ons bestuur en leierstruktuur werk saam om 'n omgewing te skep waar elke student waardevol voel.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-            <CTAButton href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")} variant="gold" large>Doen aansoek</CTAButton>
+            <CTAButton href="/aansoek" variant="gold" large>Doen aansoek</CTAButton>
             <a
               href={whatsappLink()}
               target="_blank"

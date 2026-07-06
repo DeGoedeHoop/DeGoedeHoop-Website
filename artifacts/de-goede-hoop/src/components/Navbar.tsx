@@ -104,10 +104,8 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/aansoek"
               style={{
                 marginLeft: "0.5rem",
                 backgroundColor: "#3d52a0",
@@ -121,7 +119,7 @@ export default function Navbar() {
               }}
             >
               Doen Aansoek
-            </a>
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -202,10 +200,8 @@ export default function Navbar() {
                 </Link>
               ))}
               <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                <a
-                  href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/aansoek"
                   style={{
                     backgroundColor: "#3d52a0",
                     color: "#1a2744",
@@ -219,7 +215,7 @@ export default function Navbar() {
                   }}
                 >
                   Doen Aansoek
-                </a>
+                </Link>
                 <a
                   href={whatsappLink()}
                   target="_blank"
