@@ -197,9 +197,21 @@ export default function TuisPage() {
               <InfoCard key={i} icon={card.icon} title={card.title} description={card.description} accent={i % 2 === 0} />
             ))}
           </div>
-          <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, maxWidth: "820px", margin: "2.5rem auto 0", textAlign: "center" }}>
-            Hoewel De Goede Hoop ideaal geleë is naby die Universiteit van Pretoria en Tuks se sportgronde, verwelkom ons studente van alle tersiêre instellings in Pretoria. Ons fokus is nie bloot op waar jy studeer nie, maar op wie jy is en die waardes waarmee jy jou studentetyd wil aanpak. Studente wat met De Goede Hoop se waardes identifiseer en op soek is na ’n vol, gebalanseerde studentelewe waar akademie, vriendskap, sport, kultuur en persoonlike groei hand aan hand gaan, is welkom om deel van ons koshuisgemeenskap te word.
-          </p>
+          <div
+            style={{
+              maxWidth: "820px",
+              margin: "2.5rem auto 0",
+              backgroundColor: "rgba(61,82,160,0.06)",
+              border: "1.5px solid rgba(61,82,160,0.25)",
+              borderLeft: "4px solid #3d52a0",
+              borderRadius: "10px",
+              padding: "1.75rem 2rem",
+            }}
+          >
+            <p style={{ color: "#1a2744", fontSize: "1.05rem", fontWeight: 500, lineHeight: 1.8, textAlign: "center" }}>
+              Hoewel De Goede Hoop ideaal geleë is naby die Universiteit van Pretoria en Tuks se sportgronde, verwelkom ons studente van alle tersiêre instellings in Pretoria. Ons fokus is nie bloot op waar jy studeer nie, maar op wie jy is en die waardes waarmee jy jou studentetyd wil aanpak. Studente wat met De Goede Hoop se waardes identifiseer en op soek is na ’n vol, gebalanseerde studentelewe waar akademie, vriendskap, sport, kultuur en persoonlike groei hand aan hand gaan, is welkom om deel van ons koshuisgemeenskap te word.
+            </p>
+          </div>
         </div>
       </section>
 
