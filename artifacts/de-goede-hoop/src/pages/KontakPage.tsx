@@ -1,61 +1,4 @@
-import type { ReactNode } from "react";
-import { MessageCircle, ClipboardList, GraduationCap, Users } from "lucide-react";
-import SectionHeading from "@/components/SectionHeading";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
-
-type ContactAction = {
-  label: string;
-  href: string;
-  isWhatsApp?: boolean;
-  isEmail?: boolean;
-  isInternal?: boolean;
-};
-
-type ContactCard = {
-  icon: ReactNode;
-  title: string;
-  description: string;
-  actions: ContactAction[];
-};
-
-const contactCards: ContactCard[] = [
-  {
-    icon: <MessageCircle size={22} />,
-    title: "Algemene navrae",
-    description: "Algemene navrae: bestuur@degoedehoop.co.za. Telefoon Nommer: 066 264 5433.",
-    actions: [
-      { label: "WhatsApp ons", href: whatsappLink(), isWhatsApp: true },
-      { label: "Stuur e-pos", href: mailtoLink("Algemene Navraag - De Goede Hoop"), isEmail: true },
-    ],
-  },
-  {
-    icon: <ClipboardList size={22} />,
-    title: "Aansoeke",
-    description: "Klaar om aansoek te doen? Doen aansoek op ons Aansoek-bladsy of kontak ons direk.",
-    actions: [
-      { label: "Doen aansoek", href: "/aansoek", isInternal: true },
-      { label: "WhatsApp vir aansoek", href: whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop."), isWhatsApp: true },
-    ],
-  },
-  {
-    icon: <GraduationCap size={22} />,
-    title: "Eerstejaarsinligting",
-    description: "Is jy 'n eerstejaar of ouer van 'n eerstejaar? Kontak ons vir spesifieke eerstejaarsnavrae.",
-    actions: [
-      { label: "WhatsApp vir eerstejaars", href: whatsappLink("Goeiedag, ek is 'n eerstejaar en wil graag meer weet oor De Goede Hoop."), isWhatsApp: true },
-      { label: "E-pos eerstejaarsnavraag", href: mailtoLink("Eerstejaarsnavraag - De Goede Hoop"), isEmail: true },
-    ],
-  },
-  {
-    icon: <Users size={22} />,
-    title: "Ouer-navrae",
-    description: "Ouers is welkom om met ons te kontak oor hul kind se welsyn, verblyf of enige bekommernisse.",
-    actions: [
-      { label: "WhatsApp ouer-navraag", href: whatsappLink("Goeiedag, ek is 'n ouer en wil graag meer weet oor De Goede Hoop Koshuis."), isWhatsApp: true },
-      { label: "Stuur ouer-e-pos", href: mailtoLink("Ouer Navraag - De Goede Hoop"), isEmail: true },
-    ],
-  },
-];
 
 export default function KontakPage() {
   return (
@@ -145,13 +88,17 @@ export default function KontakPage() {
             </div>
           </div>
 
+          {/* Intro text above map */}
+          <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "2rem" }}>
+            Ons verstaan dat die keuse van studenteverblyf ’n belangrike besluit vir beide studente en ouers is. Studente én ouers is daarom welkom om ons te kontak met enige navrae oor De Goede Hoop, ons verblyfopsies, geriewe, huurkoste, beskikbaarheid of die aansoekproses. Ons bestuurspan help graag met die nodige inligting om julle vrae te beantwoord en meer duidelikheid te gee oor wat studente by De Goede Hoop kan verwag.
+          </p>
+
           {/* Google Maps embed */}
           <div
             style={{
               borderRadius: "10px",
               overflow: "hidden",
               border: "1px solid rgba(61,82,160,0.2)",
-              marginBottom: "4rem",
             }}
           >
             <iframe
@@ -163,68 +110,6 @@ export default function KontakPage() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Google Maps kaart — Burnettstraat, Hatfield, Pretoria"
             />
-          </div>
-
-          {/* Contact CTA cards */}
-          <SectionHeading eyebrow="Hoe kan ons help?" title="Kies jou navraagkategorie" center />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.25rem" }}>
-            {contactCards.map((card, i) => (
-              <div
-                key={i}
-                style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "10px",
-                  padding: "1.75rem",
-                  borderTop: "4px solid #3d52a0",
-                  boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.75rem",
-                }}
-              >
-                <div
-                  style={{
-                    width: "44px",
-                    height: "44px",
-                    borderRadius: "12px",
-                    backgroundColor: "#1a2744",
-                    color: "#faf7f2",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                  aria-hidden="true"
-                >
-                  {card.icon}
-                </div>
-                <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1a2744" }}>{card.title}</h3>
-                <p style={{ color: "#555", fontSize: "0.88rem", lineHeight: 1.65, flex: 1 }}>{card.description}</p>
-                <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginTop: "0.5rem" }}>
-                  {card.actions.map((action) => (
-                    <a
-                      key={action.label}
-                      href={action.href}
-                      target={action.isWhatsApp ? "_blank" : undefined}
-                      rel={action.isWhatsApp ? "noopener noreferrer" : undefined}
-                      style={{
-                        display: "block",
-                        textAlign: "center",
-                        padding: "0.6rem 1rem",
-                        borderRadius: "5px",
-                        fontWeight: 600,
-                        fontSize: "0.85rem",
-                        textDecoration: "none",
-                        backgroundColor: action.isWhatsApp ? "#25d366" : action.isEmail ? "#f0ebe0" : "#1a2744",
-                        color: action.isWhatsApp ? "#fff" : action.isEmail ? "#1a2744" : "#faf7f2",
-                        border: action.isEmail ? "1px solid #3d52a0" : "none",
-                      }}
-                    >
-                      {action.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
