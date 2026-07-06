@@ -7,8 +7,6 @@ const navLinks = [
   { href: "/", label: "Tuis" },
   { href: "/oor-ons", label: "Oor ons" },
   { href: "/verblyf", label: "Verblyf" },
-  { href: "/eerstejaars", label: "Eerstejaars" },
-  { href: "/aansoek", label: "Aansoek" },
   { href: "/kontak", label: "Kontak ons" },
 ];
 
@@ -107,7 +105,9 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="/aansoek"
+              href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 marginLeft: "0.5rem",
                 backgroundColor: "#3d52a0",
@@ -202,8 +202,10 @@ export default function Navbar() {
                 </Link>
               ))}
               <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                <Link
-                  href="/aansoek"
+                <a
+                  href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     backgroundColor: "#3d52a0",
                     color: "#1a2744",
@@ -217,7 +219,7 @@ export default function Navbar() {
                   }}
                 >
                   Doen Aansoek
-                </Link>
+                </a>
                 <a
                   href={whatsappLink()}
                   target="_blank"

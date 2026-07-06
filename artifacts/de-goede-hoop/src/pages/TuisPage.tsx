@@ -112,7 +112,7 @@ export default function TuisPage() {
               justifyContent: "center",
             }}
           >
-            <CTAButton href="/aansoek" variant="gold" large>
+            <CTAButton href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")} variant="gold" large>
               Doen aansoek
             </CTAButton>
             <a
@@ -290,7 +290,7 @@ export default function TuisPage() {
             Bly in De Goede Hoop-koshuis.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-            <CTAButton href="/aansoek" variant="primary" large>
+            <CTAButton href={whatsappLink("Goeiedag, ek wil graag aansoek doen by De Goede Hoop.")} variant="primary" large>
               Doen aansoek
             </CTAButton>
             <a

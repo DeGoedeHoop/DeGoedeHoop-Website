@@ -26,9 +26,7 @@ const socialLinks = [
 const quickLinks = [
   { href: "/", label: "Tuis" },
   { href: "/oor-ons", label: "Oor Ons" },
-  { href: "/verblyf", label: "Verblyf & Geriewe" },
-  { href: "/eerstejaars", label: "Eerstejaars" },
-  { href: "/aansoek", label: "Doen Aansoek" },
+  { href: "/verblyf", label: "Verblyf" },
   { href: "/kontak", label: "Kontak Ons" },
   { href: "/popi", label: "POPI / Privaatheid" },
 ];
