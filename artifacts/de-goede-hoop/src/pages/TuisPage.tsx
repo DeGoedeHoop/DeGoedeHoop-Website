@@ -86,8 +86,8 @@ export default function TuisPage() {
               color: "#faf7f2",
             }}
           >
-            Jou huis weg van die huis<br />
-            <span style={{ color: "#3d52a0" }}>in Hatfield</span>
+            Jou huis weg van die huis af<br />
+            <span style={{ color: "#3d52a0" }}>De Goede Hoop</span>
           </h1>
           <p
             style={{
