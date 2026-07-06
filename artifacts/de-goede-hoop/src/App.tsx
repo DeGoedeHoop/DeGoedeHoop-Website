@@ -1,4 +1,5 @@
-import { Switch, Route, Router as WouterRouter, Link } from "wouter";
+import { useEffect } from "react";
+import { Switch, Route, Router as WouterRouter, Link, useLocation } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -32,17 +33,30 @@ function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ScrollToTop() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+}
+
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={() => <Layout><TuisPage /></Layout>} />
-      <Route path="/oor-ons" component={() => <Layout><OorOnsPage /></Layout>} />
-      <Route path="/verblyf" component={() => <Layout><VerblyPage /></Layout>} />
-      <Route path="/aansoek" component={() => <Layout><AansoekPage /></Layout>} />
-      <Route path="/kontak" component={() => <Layout><KontakPage /></Layout>} />
-      <Route path="/popi" component={() => <Layout><PopiPage /></Layout>} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={() => <Layout><TuisPage /></Layout>} />
+        <Route path="/oor-ons" component={() => <Layout><OorOnsPage /></Layout>} />
+        <Route path="/verblyf" component={() => <Layout><VerblyPage /></Layout>} />
+        <Route path="/aansoek" component={() => <Layout><AansoekPage /></Layout>} />
+        <Route path="/kontak" component={() => <Layout><KontakPage /></Layout>} />
+        <Route path="/popi" component={() => <Layout><PopiPage /></Layout>} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
