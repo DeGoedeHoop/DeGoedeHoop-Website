@@ -45,7 +45,7 @@ export default function TuisPage() {
       {/* Hero */}
       <section
         style={{
-          background: "linear-gradient(135deg, #1a2744 0%, #111a30 60%, #2d5a3d 100%)",
+          background: "linear-gradient(135deg, #1a2744 0%, #111a30 60%, #7a1f35 100%)",
           color: "#faf7f2",
           padding: "5rem 1.5rem 4rem",
           textAlign: "center",
@@ -65,7 +65,7 @@ export default function TuisPage() {
         <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative" }}>
           <p
             style={{
-              color: "#c9a84c",
+              color: "#3d52a0",
               fontWeight: 600,
               fontSize: "0.82rem",
               letterSpacing: "0.15em",
@@ -86,7 +86,7 @@ export default function TuisPage() {
             }}
           >
             Jou huis weg van die huis<br />
-            <span style={{ color: "#c9a84c" }}>in Hatfield</span>
+            <span style={{ color: "#3d52a0" }}>in Hatfield</span>
           </h1>
           <p
             style={{
@@ -164,7 +164,7 @@ export default function TuisPage() {
                   color: "#1a2744",
                 }}
               >
-                <span style={{ color: "#c9a84c", fontWeight: 700, fontSize: "1rem" }}>✓</span>
+                <span style={{ color: "#3d52a0", fontWeight: 700, fontSize: "1rem" }}>✓</span>
                 {item}
               </li>
             ))}
@@ -245,7 +245,7 @@ export default function TuisPage() {
         <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#c9a84c",
+              color: "#3d52a0",
               fontWeight: 600,
               fontSize: "0.8rem",
               letterSpacing: "0.12em",

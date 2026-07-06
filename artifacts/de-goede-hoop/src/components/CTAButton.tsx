@@ -21,9 +21,9 @@ export default function CTAButton({ href, children, variant = "primary", externa
       border: "2px solid #1a2744",
     },
     gold: {
-      backgroundColor: "#c9a84c",
+      backgroundColor: "#3d52a0",
       color: "#1a2744",
-      border: "2px solid #c9a84c",
+      border: "2px solid #3d52a0",
     },
     whatsapp: {
       backgroundColor: "#25d366",

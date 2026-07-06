@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { siteConfig, whatsappLink } from "@/data/siteConfig";
+import logoWhite from "@/assets/logo-white.png";
 
 const navLinks = [
   { href: "/", label: "Tuis" },
@@ -63,25 +64,16 @@ export default function Navbar() {
             style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "0.6rem" }}
             aria-label="De Goede Hoop Koshuis - Tuis"
           >
-            <div
-              style={{
-                width: "38px",
-                height: "38px",
-                backgroundColor: "#c9a84c",
-                borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-            >
-              <span style={{ color: "#1a2744", fontWeight: 700, fontSize: "1rem", fontFamily: "Playfair Display, serif" }}>G</span>
-            </div>
+            <img
+              src={logoWhite}
+              alt="De Goede Hoop Koshuis-logo"
+              style={{ height: "42px", width: "auto", flexShrink: 0 }}
+            />
             <div>
               <div style={{ color: "#faf7f2", fontFamily: "Playfair Display, serif", fontWeight: 600, fontSize: "1rem", lineHeight: 1.1 }}>
                 De Goede Hoop
               </div>
-              <div style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+              <div style={{ color: "#3d52a0", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" }}>
                 Koshuis
               </div>
             </div>
@@ -101,13 +93,13 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 style={{
-                  color: isActive(link.href) ? "#c9a84c" : "#d0d8ee",
+                  color: isActive(link.href) ? "#3d52a0" : "#d0d8ee",
                   fontWeight: isActive(link.href) ? 600 : 400,
                   fontSize: "0.9rem",
                   padding: "0.4rem 0.75rem",
                   borderRadius: "4px",
                   textDecoration: "none",
-                  borderBottom: isActive(link.href) ? "2px solid #c9a84c" : "2px solid transparent",
+                  borderBottom: isActive(link.href) ? "2px solid #3d52a0" : "2px solid transparent",
                   transition: "color 0.2s, border-color 0.2s",
                 }}
               >
@@ -118,7 +110,7 @@ export default function Navbar() {
               href="/aansoek"
               style={{
                 marginLeft: "0.5rem",
-                backgroundColor: "#c9a84c",
+                backgroundColor: "#3d52a0",
                 color: "#1a2744",
                 fontWeight: 700,
                 fontSize: "0.9rem",
@@ -196,7 +188,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   style={{
-                    color: isActive(link.href) ? "#c9a84c" : "#d0d8ee",
+                    color: isActive(link.href) ? "#3d52a0" : "#d0d8ee",
                     fontWeight: isActive(link.href) ? 600 : 400,
                     fontSize: "1.1rem",
                     padding: "0.75rem 1rem",
@@ -213,7 +205,7 @@ export default function Navbar() {
                 <Link
                   href="/aansoek"
                   style={{
-                    backgroundColor: "#c9a84c",
+                    backgroundColor: "#3d52a0",
                     color: "#1a2744",
                     fontWeight: 700,
                     fontSize: "1rem",

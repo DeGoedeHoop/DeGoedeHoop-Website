@@ -13,7 +13,7 @@ export default function InfoCard({ icon, title, description, accent = false }: I
         borderRadius: "10px",
         padding: "1.75rem",
         boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-        borderTop: accent ? "4px solid #c9a84c" : "4px solid #1a2744",
+        borderTop: accent ? "4px solid #3d52a0" : "4px solid #1a2744",
         display: "flex",
         flexDirection: "column",
         gap: "0.75rem",

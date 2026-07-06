@@ -61,13 +61,13 @@ export default function KontakPage() {
       {/* Page header */}
       <section
         style={{
-          background: "linear-gradient(135deg, #1a2744 0%, #2d5a3d 80%)",
+          background: "linear-gradient(135deg, #1a2744 0%, #7a1f35 80%)",
           padding: "4rem 1.5rem 3.5rem",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <p style={{ color: "#c9a84c", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+          <p style={{ color: "#3d52a0", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
             Ons is hier vir jou
           </p>
           <h1
@@ -95,7 +95,7 @@ export default function KontakPage() {
             {/* Email */}
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               <div style={{ width: "48px", height: "48px", backgroundColor: "#1a2744", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3d52a0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
@@ -103,7 +103,7 @@ export default function KontakPage() {
               <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1a2744" }}>E-pos</h2>
               <a
                 href={mailtoLink()}
-                style={{ color: "#1a2744", fontWeight: 600, fontSize: "1rem", textDecoration: "none", borderBottom: "2px solid #c9a84c", paddingBottom: "1px", display: "inline-block" }}
+                style={{ color: "#1a2744", fontWeight: 600, fontSize: "1rem", textDecoration: "none", borderBottom: "2px solid #3d52a0", paddingBottom: "1px", display: "inline-block" }}
               >
                 {siteConfig.email}
               </a>
@@ -131,7 +131,7 @@ export default function KontakPage() {
 
             {/* Address */}
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-              <div style={{ width: "48px", height: "48px", backgroundColor: "#2d5a3d", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: "48px", height: "48px", backgroundColor: "#7a1f35", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                   <circle cx="12" cy="10" r="3" />
@@ -147,7 +147,7 @@ export default function KontakPage() {
           <div
             style={{
               backgroundColor: "#f0ebe0",
-              border: "2px dashed #c9a84c",
+              border: "2px dashed #3d52a0",
               borderRadius: "10px",
               padding: "3rem",
               textAlign: "center",
@@ -156,7 +156,7 @@ export default function KontakPage() {
             role="img"
             aria-label="Google Maps kaart — Burnettstraat, Hatfield, Pretoria"
           >
-            <p style={{ color: "#c9a84c", fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
+            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
               📍 Google Maps Kaart Plaasvervanger
             </p>
             <p style={{ color: "#888", fontSize: "0.9rem" }}>Burnettstraat, Hatfield, Pretoria</p>
@@ -175,7 +175,7 @@ export default function KontakPage() {
                   backgroundColor: "#fff",
                   borderRadius: "10px",
                   padding: "1.75rem",
-                  borderTop: "4px solid #c9a84c",
+                  borderTop: "4px solid #3d52a0",
                   boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
                   display: "flex",
                   flexDirection: "column",
@@ -202,7 +202,7 @@ export default function KontakPage() {
                         textDecoration: "none",
                         backgroundColor: action.isWhatsApp ? "#25d366" : action.isEmail ? "#f0ebe0" : "#1a2744",
                         color: action.isWhatsApp ? "#fff" : action.isEmail ? "#1a2744" : "#faf7f2",
-                        border: action.isEmail ? "1px solid #c9a84c" : "none",
+                        border: action.isEmail ? "1px solid #3d52a0" : "none",
                       }}
                     >
                       {action.label}

@@ -11,7 +11,7 @@ export default function SectionHeading({ eyebrow, title, subtitle, center = fals
     <div style={{ textAlign: center ? "center" : "left", marginBottom: "2.5rem" }}>
       {eyebrow && (
         <p style={{
-          color: "#c9a84c",
+          color: "#3d52a0",
           fontWeight: 600,
           fontSize: "0.8rem",
           letterSpacing: "0.12em",

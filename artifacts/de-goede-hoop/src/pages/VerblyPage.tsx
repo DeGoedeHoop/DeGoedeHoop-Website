@@ -17,13 +17,13 @@ export default function VerblyPage() {
       {/* Page header */}
       <section
         style={{
-          background: "linear-gradient(135deg, #1a2744 0%, #2d5a3d 100%)",
+          background: "linear-gradient(135deg, #1a2744 0%, #7a1f35 100%)",
           padding: "4rem 1.5rem 3.5rem",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <p style={{ color: "#c9a84c", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+          <p style={{ color: "#3d52a0", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
             Jou kamer, jou ruimte
           </p>
           <h1
@@ -78,7 +78,7 @@ export default function VerblyPage() {
                     boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   }}
                 >
-                  <div style={{ color: "#c9a84c", fontWeight: 700, fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.06em", minWidth: "90px", paddingTop: "2px" }}>
+                  <div style={{ color: "#3d52a0", fontWeight: 700, fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.06em", minWidth: "90px", paddingTop: "2px" }}>
                     {item.label}
                   </div>
                   <div style={{ color: "#1a2744", fontSize: "0.92rem", lineHeight: 1.5 }}>{item.value}</div>
@@ -100,7 +100,7 @@ export default function VerblyPage() {
           <div
             style={{
               backgroundColor: "#fff8e8",
-              border: "1px solid #dfc078",
+              border: "1px solid #6b7ec7",
               borderRadius: "8px",
               padding: "1rem 1.25rem",
               marginBottom: "2.5rem",
@@ -109,7 +109,7 @@ export default function VerblyPage() {
               gap: "0.75rem",
             }}
           >
-            <span style={{ color: "#a8893a", fontSize: "1.1rem", flexShrink: 0, marginTop: "2px" }}>ℹ️</span>
+            <span style={{ color: "#2c3d7a", fontSize: "1.1rem", flexShrink: 0, marginTop: "2px" }}>ℹ️</span>
             <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.7 }}>
               <strong>Let wel:</strong> Geriewe kan volgens beskikbaarheid en jaarlikse reëlings verskil. Kontak bestuur vir die mees onlangse besonderhede oor kamerbeskikbaarheid en geriewe.
             </p>
@@ -128,7 +128,7 @@ export default function VerblyPage() {
                   backgroundColor: "#fff",
                   borderRadius: "10px",
                   padding: "1.5rem",
-                  borderLeft: "4px solid #c9a84c",
+                  borderLeft: "4px solid #3d52a0",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
                 }}
               >
@@ -161,7 +161,7 @@ export default function VerblyPage() {
             role="img"
             aria-label="Google Maps kaart van De Goede Hoop Koshuis, Burnettstraat, Hatfield, Pretoria — plsaas 'n ingeboude kaart hier"
           >
-            <p style={{ color: "#c9a84c", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
+            <p style={{ color: "#3d52a0", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.5rem" }}>
               📍 Kaart Plaasvervanger
             </p>
             <p style={{ color: "rgba(250,247,242,0.65)", fontSize: "0.9rem" }}>

@@ -6,11 +6,11 @@
   --color-navy-light: #243560;
   --color-cream: #faf7f2;
   --color-cream-dark: #f0ebe0;
-  --color-gold: #c9a84c;
-  --color-gold-light: #dfc078;
-  --color-gold-dark: #a8893a;
-  --color-green: #2d5a3d;
-  --color-green-light: #3a7050;
+  --color-gold: #3d52a0;
+  --color-gold-light: #6b7ec7;
+  --color-gold-dark: #2c3d7a;
+  --color-green: #7a1f35;
+  --color-green-light: #9c2e48;
   --color-charcoal: #2c2c2c;
   --color-text: #1a1a1a;
   --color-text-muted: #555555;
@@ -61,16 +61,16 @@ h5 {
 .bg-navy-light { background-color: #243560; }
 .bg-cream { background-color: #faf7f2; }
 .bg-cream-dark { background-color: #f0ebe0; }
-.bg-gold { background-color: #c9a84c; }
-.bg-green { background-color: #2d5a3d; }
+.bg-gold { background-color: #3d52a0; }
+.bg-green { background-color: #7a1f35; }
 
 .text-navy { color: #1a2744; }
-.text-gold { color: #c9a84c; }
+.text-gold { color: #3d52a0; }
 .text-cream { color: #faf7f2; }
-.text-green { color: #2d5a3d; }
+.text-green { color: #7a1f35; }
 .text-muted { color: #555555; }
 
-.border-gold { border-color: #c9a84c; }
+.border-gold { border-color: #3d52a0; }
 .border-navy { border-color: #1a2744; }
 
 /* WhatsApp float button animation */
@@ -91,6 +91,6 @@ button {
 
 /* Focus visible outline */
 :focus-visible {
-  outline: 2px solid #c9a84c;
+  outline: 2px solid #3d52a0;
   outline-offset: 2px;
 }

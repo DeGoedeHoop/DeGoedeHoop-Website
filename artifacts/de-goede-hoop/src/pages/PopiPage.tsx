@@ -13,7 +13,7 @@ export default function PopiPage() {
         }}
       >
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <p style={{ color: "#c9a84c", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+          <p style={{ color: "#3d52a0", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
             Jou privaatheid is belangrik
           </p>
           <h1
@@ -40,7 +40,7 @@ export default function PopiPage() {
           <div
             style={{
               backgroundColor: "#fff8e8",
-              border: "1px solid #dfc078",
+              border: "1px solid #6b7ec7",
               borderRadius: "8px",
               padding: "1.25rem",
               marginBottom: "3rem",
@@ -49,7 +49,7 @@ export default function PopiPage() {
               gap: "0.75rem",
             }}
           >
-            <span style={{ color: "#a8893a", fontSize: "1.1rem", flexShrink: 0, marginTop: "2px" }}>⚖️</span>
+            <span style={{ color: "#2c3d7a", fontSize: "1.1rem", flexShrink: 0, marginTop: "2px" }}>⚖️</span>
             <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.7 }}>
               Hierdie beleid is opgestel in ooreenstemming met die <strong>Protection of Personal Information Act (POPIA)</strong> van Suid-Afrika.
               Ons verbind ons tot die beskerming en verantwoordelike gebruik van jou persoonlike inligting.

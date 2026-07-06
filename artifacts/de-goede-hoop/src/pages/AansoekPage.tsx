@@ -95,7 +95,7 @@ Gestuur via degoedehoop.co.za`;
         }}
       >
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <p style={{ color: "#c9a84c", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+          <p style={{ color: "#3d52a0", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
             Begin jou reis
           </p>
           <h1
@@ -122,7 +122,7 @@ Gestuur via degoedehoop.co.za`;
           <div
             style={{
               backgroundColor: "#fff8e8",
-              border: "1px solid #dfc078",
+              border: "1px solid #6b7ec7",
               borderRadius: "8px",
               padding: "1rem 1.25rem",
               marginBottom: "2.5rem",
@@ -131,7 +131,7 @@ Gestuur via degoedehoop.co.za`;
               gap: "0.75rem",
             }}
           >
-            <span style={{ color: "#a8893a", fontSize: "1.1rem", flexShrink: 0 }}>ℹ️</span>
+            <span style={{ color: "#2c3d7a", fontSize: "1.1rem", flexShrink: 0 }}>ℹ️</span>
             <p style={{ color: "#555", fontSize: "0.88rem", lineHeight: 1.7 }}>
               Hierdie aansoekblad stuur jou besonderhede via jou e-poskliënt na{" "}
               <strong>{siteConfig.email}</strong>. Geen besonderhede word op 'n bediener gestoor nie.

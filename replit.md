@@ -18,12 +18,20 @@
 - Language: Fully Afrikaans
 - No backend, no database, no API keys
 
+## Brand
+
+- Colour scheme follows the official De Goede Hoop logo: deep navy (`#1a2744` family) as the primary colour, royal blue (`#3d52a0` family, CSS var `--color-gold`) as the main accent, and maroon (`#7a1f35` family, CSS var `--color-green`) as a secondary accent/touch used in header gradients, icons, and hover states. Note: the CSS custom property names (`--color-gold`, `--color-green`, `.bg-gold`, `.text-green`, etc.) are legacy names from the original theme — their values were updated to the new palette without renaming the variables.
+- Official logo assets live in `artifacts/de-goede-hoop/src/assets/`: `logo-white.png` (white, transparent — for dark backgrounds like the navbar/footer) and `logo-navy.png` (navy, transparent — for light backgrounds/favicon). The white version was generated from a source PDF via `pdftocairo -png -transp` (plain `pdftoppm` does not preserve transparency).
+- Favicon is `public/favicon.png` (derived from the navy logo, resized to 256x256).
+- Social links (Instagram, Facebook) are in the Footer component's `socialLinks` array.
+
 ## Where things live
 
 - `artifacts/de-goede-hoop/` — the full static website
 - `artifacts/de-goede-hoop/src/data/siteConfig.ts` — centralised contact config (email, WhatsApp, address, etc.)
 - `artifacts/de-goede-hoop/src/pages/` — all 7 pages (Tuis, OorOns, Verblyf, Eerstejaars, Aansoek, Kontak, Popi)
 - `artifacts/de-goede-hoop/src/components/` — reusable components (Navbar, Footer, WhatsAppFloat, etc.)
+- `artifacts/de-goede-hoop/src/assets/` — logo image assets (white + navy transparent PNGs)
 - `artifacts/de-goede-hoop/public/_redirects` — Cloudflare Pages SPA redirect rule
 - `artifacts/de-goede-hoop/README.md` — deployment guide
 

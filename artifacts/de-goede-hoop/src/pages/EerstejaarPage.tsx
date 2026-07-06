@@ -26,13 +26,13 @@ export default function EerstejaarPage() {
       {/* Page header */}
       <section
         style={{
-          background: "linear-gradient(135deg, #2d5a3d 0%, #1a2744 100%)",
+          background: "linear-gradient(135deg, #7a1f35 0%, #1a2744 100%)",
           padding: "4rem 1.5rem 3.5rem",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <p style={{ color: "#c9a84c", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+          <p style={{ color: "#3d52a0", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
             Nuwe begin
           </p>
           <h1
@@ -76,7 +76,7 @@ export default function EerstejaarPage() {
                   backgroundColor: "#fff",
                   borderRadius: "10px",
                   padding: "1.5rem",
-                  borderTop: "4px solid #c9a84c",
+                  borderTop: "4px solid #3d52a0",
                   boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
                 }}
               >
@@ -114,7 +114,7 @@ export default function EerstejaarPage() {
                     height: "40px",
                     borderRadius: "50%",
                     backgroundColor: "#1a2744",
-                    color: "#c9a84c",
+                    color: "#3d52a0",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -149,7 +149,7 @@ export default function EerstejaarPage() {
                   backgroundColor: "rgba(255,255,255,0.06)",
                   borderRadius: "8px",
                   padding: "1.5rem",
-                  borderTop: "3px solid #c9a84c",
+                  borderTop: "3px solid #3d52a0",
                 }}
               >
                 <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1rem", fontWeight: 700, color: "#faf7f2", marginBottom: "0.5rem" }}>{p.title}</h3>
@@ -200,7 +200,7 @@ export default function EerstejaarPage() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "0.4rem",
-                backgroundColor: "#c9a84c",
+                backgroundColor: "#3d52a0",
                 color: "#1a2744",
                 fontWeight: 700,
                 fontSize: "1rem",

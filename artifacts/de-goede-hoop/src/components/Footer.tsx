@@ -1,5 +1,27 @@
 import { Link } from "wouter";
 import { siteConfig, whatsappLink, mailtoLink } from "@/data/siteConfig";
+import logoWhite from "@/assets/logo-white.png";
+
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/degoedehoopkoshuis/?hl=en",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/share/1Du95epV7X/?mibextid=wwXIfr",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M22 12.061C22 6.505 17.523 2 12 2S2 6.505 2 12.061c0 5.022 3.657 9.184 8.438 9.939v-7.03H7.898v-2.909h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.197 2.238.197v2.476h-1.261c-1.242 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.909h-2.33V22c4.78-.755 8.438-4.917 8.438-9.939z" />
+      </svg>
+    ),
+  },
+];
 
 const quickLinks = [
   { href: "/", label: "Tuis" },
@@ -36,25 +58,16 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "1rem" }}>
-              <div
-                style={{
-                  width: "36px",
-                  height: "36px",
-                  backgroundColor: "#c9a84c",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
-                }}
-              >
-                <span style={{ color: "#1a2744", fontWeight: 700, fontSize: "0.95rem", fontFamily: "Playfair Display, serif" }}>G</span>
-              </div>
+              <img
+                src={logoWhite}
+                alt="De Goede Hoop Koshuis-logo"
+                style={{ height: "40px", width: "auto", flexShrink: 0 }}
+              />
               <div>
                 <div style={{ color: "#faf7f2", fontFamily: "Playfair Display, serif", fontWeight: 600, fontSize: "1rem", lineHeight: 1.1 }}>
                   De Goede Hoop
                 </div>
-                <div style={{ color: "#c9a84c", fontSize: "0.68rem", fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+                <div style={{ color: "#3d52a0", fontSize: "0.68rem", fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase" }}>
                   Koshuis
                 </div>
               </div>
@@ -103,7 +116,7 @@ export default function Footer() {
                       fontSize: "0.9rem",
                       transition: "color 0.2s",
                     }}
-                    onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#c9a84c")}
+                    onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#3d52a0")}
                     onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#a0aec0")}
                   >
                     {link.label}
@@ -120,30 +133,30 @@ export default function Footer() {
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               <div>
-                <div style={{ color: "#c9a84c", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.2rem" }}>Adres</div>
+                <div style={{ color: "#3d52a0", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.2rem" }}>Adres</div>
                 <p style={{ color: "#a0aec0", fontSize: "0.9rem", lineHeight: 1.5 }}>
                   {siteConfig.address}
                 </p>
               </div>
               <div>
-                <div style={{ color: "#c9a84c", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.2rem" }}>E-pos</div>
+                <div style={{ color: "#3d52a0", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.2rem" }}>E-pos</div>
                 <a
                   href={mailtoLink()}
                   style={{ color: "#a0aec0", fontSize: "0.9rem", textDecoration: "none" }}
-                  onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#c9a84c")}
+                  onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#3d52a0")}
                   onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#a0aec0")}
                 >
                   {siteConfig.email}
                 </a>
               </div>
               <div>
-                <div style={{ color: "#c9a84c", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.2rem" }}>WhatsApp</div>
+                <div style={{ color: "#3d52a0", fontSize: "0.75rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.2rem" }}>WhatsApp</div>
                 <a
                   href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: "#a0aec0", fontSize: "0.9rem", textDecoration: "none" }}
-                  onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#c9a84c")}
+                  onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#3d52a0")}
                   onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#a0aec0")}
                 >
                   {siteConfig.whatsappDisplay}
@@ -167,11 +180,43 @@ export default function Footer() {
           <p style={{ color: "#718096", fontSize: "0.82rem" }}>
             © {year} {siteConfig.organisationName}. Alle regte voorbehou.
           </p>
-          <div style={{ display: "flex", gap: "1.25rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1.25rem" }}>
+            <div style={{ display: "flex", gap: "0.75rem" }}>
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "34px",
+                    height: "34px",
+                    borderRadius: "50%",
+                    backgroundColor: "rgba(255,255,255,0.08)",
+                    color: "#d0d8ee",
+                    transition: "background-color 0.2s, color 0.2s",
+                  }}
+                  onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                    e.currentTarget.style.backgroundColor = "#7a1f35";
+                    e.currentTarget.style.color = "#fff";
+                  }}
+                  onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                    e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.08)";
+                    e.currentTarget.style.color = "#d0d8ee";
+                  }}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
             <Link
               href="/popi"
               style={{ color: "#718096", fontSize: "0.82rem", textDecoration: "none" }}
-              onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#c9a84c")}
+              onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#3d52a0")}
               onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = "#718096")}
             >
               POPI / Privaatheid

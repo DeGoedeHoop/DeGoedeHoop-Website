@@ -23,7 +23,7 @@ export default function OorOnsPage() {
         }}
       >
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <p style={{ color: "#c9a84c", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+          <p style={{ color: "#3d52a0", fontWeight: 600, fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
             Ons verhaal
           </p>
           <h1
@@ -75,7 +75,7 @@ export default function OorOnsPage() {
                 backgroundColor: "#f0ebe0",
                 borderRadius: "12px",
                 padding: "2rem",
-                borderLeft: "4px solid #c9a84c",
+                borderLeft: "4px solid #3d52a0",
               }}
             >
               <p
@@ -120,7 +120,7 @@ export default function OorOnsPage() {
                   backgroundColor: "#fff",
                   borderRadius: "10px",
                   padding: "1.5rem",
-                  borderTop: "3px solid #c9a84c",
+                  borderTop: "3px solid #3d52a0",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
                 }}
               >
