@@ -4,6 +4,7 @@ import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 import SectionHeading from "@/components/SectionHeading";
 import InfoCard from "@/components/InfoCard";
 import CTAButton from "@/components/CTAButton";
+import studenteleweCollage from "@/assets/studentelewe-collage.png";
 
 const trustHighlights = [
   "Christelike waardes",
@@ -173,6 +174,33 @@ export default function TuisPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Koshuisgemeenskap */}
+      <section style={{ backgroundColor: "#faf7f2", padding: "5rem 1.5rem 0" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+          <SectionHeading
+            eyebrow="Koshuisgemeenskap"
+            title="Meer as 'n koshuis — 'n familie"
+            subtitle="Van sportbyeenkomste tot funksies en alledaagse oomblikke saam — dít is studentelewe by De Goede Hoop."
+            center
+          />
+          <div
+            style={{
+              marginTop: "2.5rem",
+              borderRadius: "14px",
+              overflow: "hidden",
+              boxShadow: "0 20px 45px -15px rgba(26,39,68,0.35)",
+              border: "1px solid rgba(26,39,68,0.08)",
+            }}
+          >
+            <img
+              src={studenteleweCollage}
+              alt="Studente van De Goede Hoop by sport, funksies en koshuisgeleenthede saam"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
         </div>
       </section>
 
