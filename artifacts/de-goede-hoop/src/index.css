@@ -84,14 +84,21 @@ h5 {
 }
 
 /* Koshuisgemeenskap photo collage */
-.collage-grid {
-  column-count: 3;
-  column-gap: 0.75rem;
+.collage-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.collage-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+  gap: 0.75rem;
 }
 
 .collage-item {
-  break-inside: avoid;
-  margin-bottom: 0.75rem;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 12px 30px -12px rgba(26, 39, 68, 0.3);
@@ -110,14 +117,22 @@ h5 {
 }
 
 @media (max-width: 900px) {
-  .collage-grid {
-    column-count: 2;
+  .collage-columns {
+    flex-wrap: wrap;
+  }
+
+  .collage-column {
+    flex: 1 1 calc(50% - 0.4rem);
   }
 }
 
 @media (max-width: 480px) {
-  .collage-grid {
-    column-count: 1;
+  .collage-columns {
+    flex-direction: column;
+  }
+
+  .collage-column {
+    width: 100%;
   }
 }
 

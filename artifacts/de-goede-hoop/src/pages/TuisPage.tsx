@@ -11,6 +11,7 @@ import collageKonsert from "@/assets/konsert.png";
 import collageNampo from "@/assets/nampo.png";
 import collageSport from "@/assets/sport.png";
 import collageZoep from "@/assets/zoep.png";
+import collageDamesSocial from "@/assets/dames-social.png";
 
 const trustHighlights = [
   "Christelike waardes",
@@ -193,29 +194,38 @@ export default function TuisPage() {
             center
           />
           <div
-            className="collage-grid"
+            className="collage-columns"
             style={{ marginTop: "2.5rem" }}
           >
-            <div className="collage-item">
-              <img src={collageBidSaam} alt="Studente van De Goede Hoop bid saam" />
+            <div className="collage-column">
+              <div className="collage-item">
+                <img src={collageBidSaam} alt="Studente van De Goede Hoop bid saam" />
+              </div>
+              <div className="collage-item">
+                <img src={collageGemeenskap} alt="Koshuisgemeenskap saam" />
+              </div>
+              <div className="collage-item">
+                <img src={collageNampo} alt="Studente by Nampo" />
+              </div>
             </div>
-            <div className="collage-item">
-              <img src={collageBokke} alt="Studente ondersteun die Bokke" />
+            <div className="collage-column">
+              <div className="collage-item">
+                <img src={collageBokke} alt="Studente ondersteun die Bokke" />
+              </div>
+              <div className="collage-item">
+                <img src={collageKonsert} alt="Studente by 'n koshuiskonsert" />
+              </div>
+              <div className="collage-item">
+                <img src={collageDamesSocial} alt="Dames van De Goede Hoop by 'n sosiale byeenkoms" />
+              </div>
             </div>
-            <div className="collage-item">
-              <img src={collageGemeenskap} alt="Koshuisgemeenskap saam" />
-            </div>
-            <div className="collage-item">
-              <img src={collageKonsert} alt="Studente by 'n koshuiskonsert" />
-            </div>
-            <div className="collage-item">
-              <img src={collageNampo} alt="Studente by Nampo" />
-            </div>
-            <div className="collage-item">
-              <img src={collageSport} alt="Studente by 'n sportbyeenkoms" />
-            </div>
-            <div className="collage-item">
-              <img src={collageZoep} alt="Studente geniet 'n sopie saam" />
+            <div className="collage-column">
+              <div className="collage-item">
+                <img src={collageSport} alt="Studente by 'n sportbyeenkoms" />
+              </div>
+              <div className="collage-item">
+                <img src={collageZoep} alt="Studente geniet 'n sopie saam" />
+              </div>
             </div>
           </div>
         </div>
