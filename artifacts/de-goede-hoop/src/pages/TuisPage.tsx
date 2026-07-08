@@ -194,33 +194,27 @@ export default function TuisPage() {
           />
           <div
             className="collage-grid"
-            style={{
-              marginTop: "2.5rem",
-              borderRadius: "14px",
-              overflow: "hidden",
-              boxShadow: "0 20px 45px -15px rgba(26,39,68,0.35)",
-              border: "1px solid rgba(26,39,68,0.08)",
-            }}
+            style={{ marginTop: "2.5rem" }}
           >
-            <div className="collage-item collage-a">
+            <div className="collage-item">
               <img src={collageBidSaam} alt="Studente van De Goede Hoop bid saam" />
             </div>
-            <div className="collage-item collage-b">
+            <div className="collage-item">
               <img src={collageBokke} alt="Studente ondersteun die Bokke" />
             </div>
-            <div className="collage-item collage-c">
+            <div className="collage-item">
               <img src={collageGemeenskap} alt="Koshuisgemeenskap saam" />
             </div>
-            <div className="collage-item collage-d">
+            <div className="collage-item">
               <img src={collageKonsert} alt="Studente by 'n koshuiskonsert" />
             </div>
-            <div className="collage-item collage-e">
+            <div className="collage-item">
               <img src={collageNampo} alt="Studente by Nampo" />
             </div>
-            <div className="collage-item collage-f">
+            <div className="collage-item">
               <img src={collageSport} alt="Studente by 'n sportbyeenkoms" />
             </div>
-            <div className="collage-item collage-g">
+            <div className="collage-item">
               <img src={collageZoep} alt="Studente geniet 'n sopie saam" />
             </div>
           </div>
