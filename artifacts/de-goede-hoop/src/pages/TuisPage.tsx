@@ -183,7 +183,7 @@ export default function TuisPage() {
           <SectionHeading
             eyebrow="Koshuisgemeenskap"
             title="Meer as 'n koshuis — 'n familie"
-            subtitle="Van sportbyeenkomste tot funksies en alledaagse oomblikke saam — dít is studentelewe by De Goede Hoop."
+            subtitle="Sportbyeenkomste, sosiale aksies, koshuis konserte en lewenslange herinneringe."
             center
           />
           <div
