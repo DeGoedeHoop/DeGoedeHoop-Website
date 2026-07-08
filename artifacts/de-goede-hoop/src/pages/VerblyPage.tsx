@@ -1,6 +1,5 @@
-import { Home, Wifi, Car, Shirt, UtensilsCrossed, TreePine, Mail } from "lucide-react";
+import { Home, Wifi, Shirt, UtensilsCrossed, TreePine, Mail } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
-import CTAButton from "@/components/CTAButton";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
 const amenities = [
@@ -8,31 +7,31 @@ const amenities = [
     icon: <Home size={20} />,
     title: "Kamers en Badkamers",
     description:
-      "Elke enkelkamer beskik oor ’n enkelbedbasis, lessenaar, boekrak en ingeboude kas. Jy bring self jou matras, beddegoed, gordyne (standaardlengte), stoel, asblik en persoonlike goed. Badkamers is toegerus met toilette, wasbakke en storte, met baddens in sommige eenhede — onthou jou eie stortmatjie.",
+      "Elke enkelkamer beskik oor 'n enkelbedbasis, lessenaar, boekrak en ingeboude kas. Jy bring self jou matras, beddegoed, gordyne (standaardlengte), stoel, asblik en persoonlike goed. Badkamers is toegerus met toilette, wasbakke en storte — met baddens in sommige eenhede. Onthou jou eie stortmatjie.",
   },
   {
     icon: <Wifi size={20} />,
     title: "Wi-Fi en Parkering",
     description:
-      "Wi-Fi is deurgaans in die koshuis beskikbaar sodat studente maklik kan aanlyn gaan vir studies en kommunikasie. Veilige, omheinde parkering is ook op die perseel vir studente met voertuie.",
+      "Wi-Fi is deurgaans in die koshuis beskikbaar sodat studente maklik aanlyn kan gaan vir studies en kommunikasie. Veilige, omheinde parkering is op die perseel beskikbaar vir studente met voertuie. Elektrisiteit en parkering is by die huurbedrag ingesluit.",
   },
   {
     icon: <Shirt size={20} />,
     title: "Was- en Droogfasiliteite",
     description:
-      "Industriële wasmasjiene en tuimeldroërs is in die gedeelde wasgeriewe beskikbaar, sodat studente hul wasgoed maklik en vinnig binne die koshuisterrein kan doen.",
+      "Industriële wasmasjiene en tuimeldroërs is in die gedeelde wasgeriewe beskikbaar, sodat studente hul wasgoed maklik en vinnig binne die koshuisterrein kan doen — geen reis na 'n wasserette nodig nie.",
   },
   {
     icon: <UtensilsCrossed size={20} />,
     title: "Kombuis en Gemeenskaplike Ruimtes",
     description:
-      "Kombuise is toegerus met ’n yskas/vrieskas en induksiestoof. Studente voorsien self hul kastrolle, panne, glase, borde, bekers en eetgerei, asook hul eie skoonmaakmiddels, lappies en sponsies. Kroegyskassies word in kamers toegelaat.",
+      "Gedeelde kombuise is toegerus met 'n yskas/vrieskas en induksiestoof. Studente voorsien self hul eie kastrolle, panne, eetgerei en skoonmaakmiddels. Kroegyskassies word in kamers toegelaat. Gedeelde areas word weeksdae deur die koshuis skoongemaak.",
   },
   {
     icon: <TreePine size={20} />,
-    title: "Klubhuis en Buitelucht",
+    title: "Klubhuis, Braai en Buitelucht",
     description:
-      "’n Klubhuis, braaigeriewe en lieflike grasperke bied ruimte vir ontspanning, saamkuier en sosiale byeenkomste buite die klaskamer — die hart van die koshuisgemeenskap.",
+      "'n Klubhuis, braaigeriewe en lieflike grasperke bied ruimte vir ontspanning, saamkuier en sosiale byeenkomste — die hartklop van die koshuisgemeenskap buite die klaskamer.",
   },
 ];
 
@@ -72,41 +71,42 @@ export default function VerblyPage() {
       {/* Overview */}
       <section style={{ backgroundColor: "#faf7f2", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "3rem", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "3rem", alignItems: "start" }}>
             <div>
               <SectionHeading eyebrow="Verblyf" title="Wat bied De Goede Hoop jou?" />
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-                Studente bly in hul eie kamers. Daar is verskillende tipes kamers: koshuiskamers, gedeelde woonstelle, kommunes en tuinwoonstelle. Mans en dames woon apart.
+                Studente bly in hul eie kamers. Daar is verskillende tipes kamers: koshuiskamers, gedeelde woonstelle, kommunes en tuinwoonstelle. Mans en dames woon op aparte vleuels.
               </p>
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-                Elektrisiteit en parkering word by die huurbedrag ingesluit. Geen etes word verskaf nie aangesien daar kombuise is.
+                Geen etes word verskaf nie — gedeelde kombuise is egter voltoegerus vir selfversorging. Die koshuis is omring met 'n elektriese heining en hek, met 'n 24 uur-sekuriteitswag.
               </p>
               <p style={{ color: "#555", fontSize: "1rem", lineHeight: 1.8 }}>
-                Die koshuis is omring met ’n elektriese heining en hek, met ’n 24 uur-sekuriteitswag. Gedeelde areas word weeksdae skoongemaak. Kamerplasings word deur De Goede Hoop gedoen, nadat die keuringsproses voltooi is.
+                Kamerplasings word deur De Goede Hoop gedoen nadat die keuringsproses voltooi is. Gedeelde areas word weeksdae deur die personeel skoongemaak.
               </p>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0", borderRadius: "12px", overflow: "hidden", boxShadow: "0 2px 16px rgba(26,39,68,0.09)", border: "1px solid rgba(26,39,68,0.08)" }}>
               {[
                 { label: "Ligging", value: siteConfig.address },
                 { label: "Distansie", value: siteConfig.locationDescription },
                 { label: "Vleuelindeling", value: "Afsonderlike mans- en damesvleuels" },
+                { label: "Sekuriteit", value: "Elektriese omheining, hek en 24 uur-wag" },
                 { label: "Omgewing", value: "Christelik, Afrikaans, gestruktureerd" },
-              ].map((item) => (
+              ].map((item, i, arr) => (
                 <div
                   key={item.label}
                   style={{
-                    display: "flex",
-                    gap: "1rem",
-                    padding: "1rem",
-                    backgroundColor: "#fff",
-                    borderRadius: "8px",
-                    boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                    display: "grid",
+                    gridTemplateColumns: "110px 1fr",
+                    gap: "0.75rem",
+                    padding: "1.1rem 1.25rem",
+                    backgroundColor: i % 2 === 0 ? "#fff" : "#f7f5f0",
+                    borderBottom: i < arr.length - 1 ? "1px solid rgba(26,39,68,0.07)" : "none",
                   }}
                 >
-                  <div style={{ color: "#3d52a0", fontWeight: 700, fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.06em", minWidth: "90px", paddingTop: "2px" }}>
+                  <div style={{ color: "#3d52a0", fontWeight: 700, fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.07em", paddingTop: "2px" }}>
                     {item.label}
                   </div>
-                  <div style={{ color: "#1a2744", fontSize: "0.92rem", lineHeight: 1.5 }}>{item.value}</div>
+                  <div style={{ color: "#1a2744", fontSize: "0.92rem", lineHeight: 1.55 }}>{item.value}</div>
                 </div>
               ))}
             </div>
@@ -116,65 +116,48 @@ export default function VerblyPage() {
 
       {/* Geriewe */}
       <section style={{ backgroundColor: "#f0ebe0", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <SectionHeading
             eyebrow="Geriewe"
-            title="Geriewe sluit in"
+            title="Wat is ingesluit?"
+            subtitle="Alles wat jy nodig het vir 'n gemaklike, gestruktureerde studentelewe — op een perseel."
             center
           />
-          <div
-            style={{
-              backgroundColor: "#fff8e8",
-              border: "1px solid #6b7ec7",
-              borderRadius: "8px",
-              padding: "1rem 1.25rem",
-              marginBottom: "2.5rem",
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "0.75rem",
-            }}
-          >
-            <Info size={19} style={{ color: "#2c3d7a", flexShrink: 0, marginTop: "2px" }} aria-hidden="true" />
-            <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.7 }}>
-              <strong>Let wel:</strong> Wi-Fi; wasgeriewe met wasmasjiene en tuimeldroërs; veilige parkering; en ’n klubhuis, braaigeriewe en lieflike grasperke.
-            </p>
-          </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-              gap: "1.25rem",
-            }}
-          >
+          <div style={{ marginTop: "3rem" }}>
             {amenities.map((a, i) => (
               <div
                 key={i}
                 style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "10px",
-                  padding: "1.5rem",
-                  borderLeft: "4px solid #3d52a0",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+                  display: "grid",
+                  gridTemplateColumns: "52px 1fr",
+                  gap: "1.5rem",
+                  alignItems: "flex-start",
+                  padding: "1.75rem 0",
+                  borderBottom: i < amenities.length - 1 ? "1px solid rgba(26,39,68,0.12)" : "none",
                 }}
               >
                 <div
                   style={{
-                    width: "42px",
-                    height: "42px",
-                    borderRadius: "12px",
-                    backgroundColor: "#3d52a0",
+                    width: "52px",
+                    height: "52px",
+                    borderRadius: "10px",
+                    backgroundColor: "#1a2744",
                     color: "#faf7f2",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginBottom: "0.75rem",
+                    flexShrink: 0,
                   }}
                   aria-hidden="true"
                 >
                   {a.icon}
                 </div>
-                <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 700, color: "#1a2744", marginBottom: "0.5rem" }}>{a.title}</h3>
-                <p style={{ color: "#555", fontSize: "0.9rem", lineHeight: 1.65 }}>{a.description}</p>
+                <div>
+                  <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.15rem", fontWeight: 700, color: "#1a2744", marginBottom: "0.45rem" }}>
+                    {a.title}
+                  </h3>
+                  <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.8 }}>{a.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -188,7 +171,6 @@ export default function VerblyPage() {
           <p style={{ color: "rgba(250,247,242,0.82)", fontSize: "1rem", lineHeight: 1.8, textAlign: "center", maxWidth: "600px", margin: "0 auto 2rem" }}>
             {siteConfig.locationDescription}. Hatfield is een van Pretoria se gewildste studente-areas met winkels, restaurante en uitstekende openbare vervoer reg voor jou deur.
           </p>
-          {/* Google Maps embed */}
           <div
             style={{
               borderRadius: "10px",
@@ -226,7 +208,7 @@ export default function VerblyPage() {
             Wil jy meer weet oor kamers en beskikbaarheid?
           </h2>
           <p style={{ color: "#555", fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            Vir enige navrae of verdere inligting, stuur asseblief ’n epos na bestuur@degoedehoop.co.za.
+            Vir enige navrae of verdere inligting, stuur asseblief 'n epos na bestuur@degoedehoop.co.za of kontak ons direk via WhatsApp.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
             <a
