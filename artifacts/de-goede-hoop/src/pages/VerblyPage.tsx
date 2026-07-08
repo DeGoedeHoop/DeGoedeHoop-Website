@@ -1,15 +1,39 @@
-import { Home, Wifi, Car, Shirt, UtensilsCrossed, BookOpen, Info, Mail } from "lucide-react";
+import { Home, Wifi, Car, Shirt, UtensilsCrossed, TreePine, Mail } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 
 const amenities = [
-  { icon: <Home size={20} />, title: "Mans- en Damesvleuels", description: "Elke enkelkamer beskik oor ’n enkelbedbasis, lessenaar, boekrak en ingeboude kas. Jy moet dus net jou eie matras, beddegoed, gordyne (standaardlengte), stoel, asblik en persoonlike goed saam te bring. Badkamers is toegerus met toilette, wasbakke, storte en in sommige eenhede baddens. Bring jou eie stortmatjie saam." },
-  { icon: <Wifi size={20} />, title: "Wi-Fi", description: "Wi-Fi." },
-  { icon: <Car size={20} />, title: "Parkering", description: "Veilige parkering." },
-  { icon: <Shirt size={20} />, title: "Was- en Droogfasiliteite", description: "Wasgeriewe met wasmasjiene en tuimeldroërs. Industriële wasmasjiene en tuimeldroërs is beskikbaar." },
-  { icon: <UtensilsCrossed size={20} />, title: "Kombuis / Gemeenskaplike Ruimtes", description: "Kombuise is met ’n ys-/vrieskas en induksiestoof toegerus. Studente is verantwoordelik vir hul eie kastrolle, panne, glase, borde, bekers en eetgerei. Kroegyskassies word in die kamers toegelaat. Eie skoonmaakmiddels, lappies en sponsies moet egter voorsien word." },
-  { icon: <BookOpen size={20} />, title: "Studieruimte", description: "’n Klubhuis, braaigeriewe en lieflike grasperke." },
+  {
+    icon: <Home size={20} />,
+    title: "Kamers en Badkamers",
+    description:
+      "Elke enkelkamer beskik oor ’n enkelbedbasis, lessenaar, boekrak en ingeboude kas. Jy bring self jou matras, beddegoed, gordyne (standaardlengte), stoel, asblik en persoonlike goed. Badkamers is toegerus met toilette, wasbakke en storte, met baddens in sommige eenhede — onthou jou eie stortmatjie.",
+  },
+  {
+    icon: <Wifi size={20} />,
+    title: "Wi-Fi en Parkering",
+    description:
+      "Wi-Fi is deurgaans in die koshuis beskikbaar sodat studente maklik kan aanlyn gaan vir studies en kommunikasie. Veilige, omheinde parkering is ook op die perseel vir studente met voertuie.",
+  },
+  {
+    icon: <Shirt size={20} />,
+    title: "Was- en Droogfasiliteite",
+    description:
+      "Industriële wasmasjiene en tuimeldroërs is in die gedeelde wasgeriewe beskikbaar, sodat studente hul wasgoed maklik en vinnig binne die koshuisterrein kan doen.",
+  },
+  {
+    icon: <UtensilsCrossed size={20} />,
+    title: "Kombuis en Gemeenskaplike Ruimtes",
+    description:
+      "Kombuise is toegerus met ’n yskas/vrieskas en induksiestoof. Studente voorsien self hul kastrolle, panne, glase, borde, bekers en eetgerei, asook hul eie skoonmaakmiddels, lappies en sponsies. Kroegyskassies word in kamers toegelaat.",
+  },
+  {
+    icon: <TreePine size={20} />,
+    title: "Klubhuis en Buitelucht",
+    description:
+      "’n Klubhuis, braaigeriewe en lieflike grasperke bied ruimte vir ontspanning, saamkuier en sosiale byeenkomste buite die klaskamer — die hart van die koshuisgemeenskap.",
+  },
 ];
 
 export default function VerblyPage() {
