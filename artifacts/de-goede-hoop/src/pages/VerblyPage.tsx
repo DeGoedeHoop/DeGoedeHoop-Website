@@ -29,7 +29,7 @@ const amenities = [
   },
   {
     icon: <TreePine size={20} />,
-    title: "Klubhuis, Braai en Buitelucht",
+    title: "Klubhuis, Braai en Buitelug",
     description:
       "'n Klubhuis, braaigeriewe en lieflike grasperke bied ruimte vir ontspanning, saamkuier en sosiale byeenkomste — die hartklop van die koshuisgemeenskap buite die klaskamer.",
   },
