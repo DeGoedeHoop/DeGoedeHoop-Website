@@ -4,8 +4,8 @@ import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 import SectionHeading from "@/components/SectionHeading";
 import InfoCard from "@/components/InfoCard";
 import CTAButton from "@/components/CTAButton";
-import collage1 from "@/assets/collage-1.png";
-import collage2 from "@/assets/collage-2.png";
+const collage1 = "/collage-1.png";
+const collage2 = "/collage-2.png";
 
 const trustHighlights = [
   "Christelike waardes",
@@ -192,10 +192,22 @@ export default function TuisPage() {
             style={{ marginTop: "2.5rem" }}
           >
             <div className="collage-pair-item">
-              <img src={collage1} alt="Studente van De Goede Hoop by sport, sosiale geleenthede en koshuislewe" />
+              <img
+                src={collage1}
+                alt="Studente van De Goede Hoop by sport, sosiale geleenthede en koshuislewe"
+                loading="eager"
+                fetchPriority="high"
+                decoding="sync"
+              />
             </div>
             <div className="collage-pair-item">
-              <img src={collage2} alt="Studente van De Goede Hoop by konserte, sport en gemeenskapsgebeure" />
+              <img
+                src={collage2}
+                alt="Studente van De Goede Hoop by konserte, sport en gemeenskapsgebeure"
+                loading="eager"
+                fetchPriority="high"
+                decoding="sync"
+              />
             </div>
           </div>
         </div>
