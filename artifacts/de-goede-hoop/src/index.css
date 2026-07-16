@@ -83,56 +83,39 @@ h5 {
   animation: pulse-whatsapp 3s ease-in-out infinite;
 }
 
-/* Koshuisgemeenskap photo collage */
-.collage-columns {
+/* Koshuisgemeenskap photo collage pair */
+.collage-pair {
   display: flex;
+  gap: 1rem;
   align-items: flex-start;
-  gap: 0.75rem;
 }
 
-.collage-column {
-  display: flex;
-  flex-direction: column;
+.collage-pair-item {
   flex: 1 1 0;
   min-width: 0;
-  gap: 0.75rem;
-}
-
-.collage-item {
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 12px 30px -12px rgba(26, 39, 68, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px -12px rgba(26, 39, 68, 0.32);
   border: 1px solid rgba(26, 39, 68, 0.08);
+  aspect-ratio: 1023 / 1537;
+  background-color: #f0ebe0;
 }
 
-.collage-item img {
+.collage-pair-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
 }
 
-.collage-item:hover img {
-  transform: scale(1.05);
+.collage-pair-item:hover img {
+  transform: scale(1.02);
 }
 
-@media (max-width: 900px) {
-  .collage-columns {
-    flex-wrap: wrap;
-  }
-
-  .collage-column {
-    flex: 1 1 calc(50% - 0.4rem);
-  }
-}
-
-@media (max-width: 480px) {
-  .collage-columns {
+@media (max-width: 640px) {
+  .collage-pair {
     flex-direction: column;
-  }
-
-  .collage-column {
-    width: 100%;
   }
 }
 

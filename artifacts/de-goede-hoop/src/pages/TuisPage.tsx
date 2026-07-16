@@ -4,14 +4,8 @@ import { whatsappLink, mailtoLink, siteConfig } from "@/data/siteConfig";
 import SectionHeading from "@/components/SectionHeading";
 import InfoCard from "@/components/InfoCard";
 import CTAButton from "@/components/CTAButton";
-import collageBidSaam from "@/assets/bid-saam.png";
-import collageBokke from "@/assets/bokke.png";
-import collageGemeenskap from "@/assets/gemeenskap.png";
-import collageKonsert from "@/assets/konsert.png";
-import collageNampo from "@/assets/nampo.png";
-import collageSport from "@/assets/sport.png";
-import collageZoep from "@/assets/zoep.png";
-import collageDamesSocial from "@/assets/dames-social.png";
+import collage1 from "@/assets/collage-1.png";
+import collage2 from "@/assets/collage-2.png";
 
 const trustHighlights = [
   "Christelike waardes",
@@ -194,38 +188,14 @@ export default function TuisPage() {
             center
           />
           <div
-            className="collage-columns"
+            className="collage-pair"
             style={{ marginTop: "2.5rem" }}
           >
-            <div className="collage-column">
-              <div className="collage-item">
-                <img src={collageBidSaam} alt="Studente van De Goede Hoop bid saam" />
-              </div>
-              <div className="collage-item">
-                <img src={collageGemeenskap} alt="Koshuisgemeenskap saam" />
-              </div>
-              <div className="collage-item">
-                <img src={collageNampo} alt="Studente by Nampo" />
-              </div>
+            <div className="collage-pair-item">
+              <img src={collage1} alt="Studente van De Goede Hoop by sport, sosiale geleenthede en koshuislewe" />
             </div>
-            <div className="collage-column">
-              <div className="collage-item">
-                <img src={collageBokke} alt="Studente ondersteun die Bokke" />
-              </div>
-              <div className="collage-item">
-                <img src={collageKonsert} alt="Studente by 'n koshuiskonsert" />
-              </div>
-              <div className="collage-item">
-                <img src={collageDamesSocial} alt="Dames van De Goede Hoop by 'n sosiale byeenkoms" />
-              </div>
-            </div>
-            <div className="collage-column">
-              <div className="collage-item">
-                <img src={collageSport} alt="Studente by 'n sportbyeenkoms" />
-              </div>
-              <div className="collage-item">
-                <img src={collageZoep} alt="Studente geniet 'n sopie saam" />
-              </div>
+            <div className="collage-pair-item">
+              <img src={collage2} alt="Studente van De Goede Hoop by konserte, sport en gemeenskapsgebeure" />
             </div>
           </div>
         </div>
