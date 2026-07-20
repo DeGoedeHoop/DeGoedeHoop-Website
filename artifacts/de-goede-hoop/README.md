@@ -36,12 +36,19 @@ npm run preview
 
 ## Cloudflare Pages-instellings
 
-| Instelling               | Waarde        |
-|--------------------------|---------------|
-| Framework preset         | Vite          |
-| Build command            | `npm run build` |
-| Build output directory   | `dist`        |
-| Production branch        | `main`        |
+| Setting                  | Value                                      |
+|--------------------------|--------------------------------------------|
+| Framework preset         | None                                       |
+| Build command            | `npx pnpm install && npx pnpm --filter @workspace/de-goede-hoop run build` |
+| Build output directory   | `artifacts/de-goede-hoop/dist/public`      |
+| Production branch        | `main`                                     |
+| Node.js version          | `20` (set under Environment Variables)     |
+
+**Environment variables (Cloudflare Pages → Settings → Environment Variables):**
+
+| Variable      | Value |
+|---------------|-------|
+| `NODE_VERSION` | `20`  |
 
 ---
 
