@@ -1,0 +1,100 @@
+2026-07-20T18:58:35.908Z	Initializing build environment...
+2026-07-20T18:58:38.411Z	Success: Finished initializing build environment
+2026-07-20T18:58:39.114Z	Cloning repository...
+2026-07-20T18:58:42.955Z	Restoring from dependencies cache
+2026-07-20T18:58:42.957Z	Restoring from build output cache
+2026-07-20T18:58:45.580Z	Detected the following tools from environment: pnpm@10.26.1, nodejs@22.16.0
+2026-07-20T18:58:47.401Z	Installing project dependencies: pnpm install --frozen-lockfile
+2026-07-20T18:58:48.299Z	Scope: all 9 workspace projects
+2026-07-20T18:58:48.431Z	Lockfile is up to date, resolution step is skipped
+2026-07-20T18:58:48.516Z	Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-07-20T18:58:48.593Z	Packages: +477
+2026-07-20T18:58:48.595Z	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-07-20T18:58:49.522Z	Progress: resolved 477, reused 0, downloaded 15, added 0
+2026-07-20T18:58:50.520Z	Progress: resolved 477, reused 0, downloaded 135, added 42
+2026-07-20T18:58:51.526Z	Progress: resolved 477, reused 0, downloaded 241, added 94
+2026-07-20T18:58:52.525Z	Progress: resolved 477, reused 0, downloaded 275, added 106
+2026-07-20T18:58:53.525Z	Progress: resolved 477, reused 0, downloaded 289, added 110
+2026-07-20T18:58:54.529Z	Progress: resolved 477, reused 0, downloaded 290, added 110
+2026-07-20T18:58:55.529Z	Progress: resolved 477, reused 0, downloaded 306, added 114
+2026-07-20T18:58:56.530Z	Progress: resolved 477, reused 0, downloaded 374, added 139
+2026-07-20T18:58:57.534Z	Progress: resolved 477, reused 0, downloaded 441, added 163
+2026-07-20T18:58:58.532Z	Progress: resolved 477, reused 0, downloaded 477, added 249
+2026-07-20T18:58:59.469Z	Progress: resolved 477, reused 0, downloaded 477, added 477, done
+2026-07-20T18:58:59.764Z	.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+2026-07-20T18:58:59.862Z	.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+2026-07-20T18:59:00.642Z	
+2026-07-20T18:59:00.642Z	devDependencies:
+2026-07-20T18:59:00.642Z	+ prettier 3.8.4
+2026-07-20T18:59:00.642Z	+ typescript 5.9.3
+2026-07-20T18:59:00.642Z	
+2026-07-20T18:59:00.724Z	. preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+2026-07-20T18:59:00.747Z	. preinstall: Done
+2026-07-20T18:59:00.978Z	Done in 13.3s using pnpm v10.26.1
+2026-07-20T18:59:01.182Z	Executing user build command: npx pnpm install --no-frozen-lockfile && npx pnpm --filter @workspace/de-goede-hoop run build
+2026-07-20T18:59:03.432Z	Scope: all 9 workspace projects
+2026-07-20T18:59:03.878Z	Lockfile is up to date, resolution step is skipped
+2026-07-20T18:59:03.879Z	Already up to date
+2026-07-20T18:59:06.882Z	
+2026-07-20T18:59:07.065Z	. preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+2026-07-20T18:59:07.085Z	. preinstall: Done
+2026-07-20T18:59:07.258Z	Done in 4.7s using pnpm v10.26.1
+2026-07-20T18:59:08.651Z	
+2026-07-20T18:59:08.652Z	> @workspace/de-goede-hoop@0.0.0 build /opt/buildhome/repo/artifacts/de-goede-hoop
+2026-07-20T18:59:08.652Z	> vite build --config vite.config.ts
+2026-07-20T18:59:08.652Z	
+2026-07-20T18:59:09.323Z	vite v7.3.5 building client environment for production...
+2026-07-20T18:59:09.452Z	transforming...
+2026-07-20T18:59:13.497Z	✓ 1697 modules transformed.
+2026-07-20T18:59:13.830Z	rendering chunks...
+2026-07-20T18:59:13.840Z	computing gzip size...
+2026-07-20T18:59:13.855Z	dist/public/index.html                        1.84 kB │ gzip:  0.73 kB
+2026-07-20T18:59:13.857Z	dist/public/assets/logo-white-BZbiqzkD.png  271.96 kB
+2026-07-20T18:59:13.858Z	dist/public/assets/index-B0nknp_D.css        63.31 kB │ gzip: 11.57 kB
+2026-07-20T18:59:13.859Z	dist/public/assets/index-CIQ7XZoE.js        268.39 kB │ gzip: 79.12 kB
+2026-07-20T18:59:13.859Z	✓ built in 4.46s
+2026-07-20T18:59:13.944Z	Success: Build command completed
+2026-07-20T18:59:14.297Z	Executing user deploy command: npx wrangler deploy
+2026-07-20T18:59:15.827Z	npm warn exec The following package was not found and will be installed: wrangler@4.112.0
+2026-07-20T18:59:30.164Z	
+2026-07-20T18:59:30.164Z	 ⛅️ wrangler 4.112.0
+2026-07-20T18:59:30.165Z	────────────────────
+2026-07-20T18:59:31.876Z	▲ [WARNING] The local configuration being used (generated from your local configuration file) differs from the remote configuration of your Worker set via the Cloudflare Dashboard:
+2026-07-20T18:59:31.876Z	
+2026-07-20T18:59:31.877Z	   {
+2026-07-20T18:59:31.877Z	  +  assets: {
+2026-07-20T18:59:31.877Z	  +  }
+2026-07-20T18:59:31.877Z	  -  compatibility_date: "2026-07-20"
+2026-07-20T18:59:31.878Z	  +  compatibility_date: "2025-01-01"
+2026-07-20T18:59:31.878Z	  -  workers_dev: false
+2026-07-20T18:59:31.878Z	  +  workers_dev: true
+2026-07-20T18:59:31.878Z	  -  preview_urls: false
+2026-07-20T18:59:31.879Z	  +  preview_urls: true
+2026-07-20T18:59:31.879Z	     vars: {
+2026-07-20T18:59:31.879Z	  -    PNPM_VERSION: "10.26.1"
+2026-07-20T18:59:31.879Z	     }
+2026-07-20T18:59:31.879Z	   }
+2026-07-20T18:59:31.883Z	  
+2026-07-20T18:59:31.883Z	  
+2026-07-20T18:59:31.883Z	  Uploading the Worker will override the remote configuration with your local one.
+2026-07-20T18:59:31.885Z	
+2026-07-20T18:59:31.886Z	
+2026-07-20T18:59:32.003Z	🌀 Building list of assets...
+2026-07-20T18:59:32.005Z	✨ Read 11 files from the assets directory /opt/buildhome/repo/artifacts/de-goede-hoop/dist/public
+2026-07-20T18:59:32.102Z	🌀 Starting asset upload...
+2026-07-20T18:59:33.733Z	No updated asset files to upload. Proceeding with deployment...
+2026-07-20T18:59:33.747Z	Total Upload: 0.33 KiB / gzip: 0.24 KiB
+2026-07-20T18:59:33.934Z	
+2026-07-20T18:59:33.934Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-07-20T18:59:33.937Z	
+2026-07-20T18:59:33.937Z	✘ [ERROR] A request to the Cloudflare API (/accounts/d8f09cca0c68c2b760e8d96c0cdc1568/workers/scripts/degoedehoop-website/versions) failed.
+2026-07-20T18:59:33.937Z	
+2026-07-20T18:59:33.938Z	  Invalid _redirects configuration:
+2026-07-20T18:59:33.941Z	  Line 1: Infinite loop detected in this rule. This would cause a redirect to strip `.html` or `/index` and end up triggering this rule again. [code: 100324]
+2026-07-20T18:59:33.941Z	
+2026-07-20T18:59:33.941Z	  
+2026-07-20T18:59:33.942Z	  If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+2026-07-20T18:59:33.942Z	
+2026-07-20T18:59:33.942Z	
+2026-07-20T18:59:33.953Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-07-20_18-59-29_582.log"
+2026-07-20T18:59:34.051Z	Failed: error occurred while running deploy command
