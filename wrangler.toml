@@ -1,0 +1,5 @@
+name = "degoedehoop-website"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./artifacts/de-goede-hoop/dist/public"
