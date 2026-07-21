@@ -1,8 +1,0 @@
-name = "degoedehoop-website"
-compatibility_date = "2026-07-20"
-workers_dev = true
-preview_urls = false
-
-[assets]
-directory = "./artifacts/de-goede-hoop/dist/public"
-not_found_handling = "single-page-application"
