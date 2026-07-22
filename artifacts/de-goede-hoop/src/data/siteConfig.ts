@@ -6,7 +6,7 @@ export const siteConfig = {
   address: "Burnettstraat, Hatfield, Pretoria",
   locationDescription:
     "Ongeveer 200m vanaf Tuks se sportgronde en ongeveer 1km vanaf die Hatfield-kampus",
-  domain: "https://degoedehoop.co.za",
+  domain: "https://www.degoedehoop.co.za",
   defaultWhatsAppMessage:
     "Goeiedag, ek wil graag meer inligting ontvang oor De Goede Hoop-koshuis en die aansoekproses.",
 };
