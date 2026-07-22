@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://www.degoedehoop.co.za/sitemap.xml
